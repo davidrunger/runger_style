@@ -1,165 +1,184 @@
-require: rubocop-rspec
-
+require:
+  - rubocop-performance
+  - rubocop-rspec
 AllCops:
-  TargetRubyVersion: 2.4
-  Include:
-    - Rakefile
-    - lib/**/*.rake
+  EnabledByDefault: true
   Exclude:
-    - 'vendor/**/*'
-    - '*.gemspec'
-
-Bundler/OrderedGems:
+    - !ruby/regexp /\/db\/migrate/201[1-8].*\.rb\z/
+    # auto-generated files; best to leave as-is
+    - bin/{annotate,brakeman,bundle,database_consistency,pallets,rubocop,sidekiq}
+    - db/schema.rb
+    - lib/tasks/auto_annotate_models.rake
+    - node_modules/**/*
+  TargetRubyVersion: 2.7
+Bundler/GemComment:
   Enabled: false
-
+FactoryBot/AttributeDefinedStatically:
+  Exclude:
+    - spec/support/fixture_builder.rb # false positives get raised in this file
 Layout/ArgumentAlignment:
   EnforcedStyle: with_fixed_indentation
-
-Layout/ParameterAlignment:
-  EnforcedStyle: with_fixed_indentation
-
-Layout/CaseIndentation:
-  EnforcedStyle: end
-
-Layout/EndAlignment:
-  EnforcedStyleAlignWith: variable
-
+Layout/ClassStructure:
+  ExpectedOrder:
+      - module_inclusion
+      - constants
+      - public_class_methods
+      - initializer
+      - public_methods
+      - protected_methods
+      - private_methods
+Layout/DotPosition:
+  EnforcedStyle: trailing
+Layout/FirstArgumentIndentation:
+  Enabled: false # this rule doesn't play nicely with the way that I like to use `memoize`
 Layout/FirstArrayElementIndentation:
   EnforcedStyle: consistent
-
+Layout/LineLength:
+  IgnoredPatterns:
+    # ignore line length if the line is a comment without any spaces; it's probably not something we
+    # can fix (e.g. a long file path)
+    - !ruby/regexp /^ *#? [\S]+$/
+  Max: 100
 Layout/MultilineMethodCallIndentation:
   EnforcedStyle: indented
-
-Layout/MultilineOperationIndentation:
-  EnforcedStyle: indented
-
-Layout/SpaceInsideHashLiteralBraces:
-  EnforcedStyle: no_space
-
-# This seems to break some require lines somehow:
-Layout/EmptyLinesAroundArguments:
+Layout/SpaceBeforeBlockBraces:
   Enabled: false
-
-Lint/RescueException:
-  Exclude:
-    - 'lib/tasks/*.rake'
-
-Metrics/LineLength:
-  Max: 100
-
+Layout/SpaceBeforeSemicolon:
+  Enabled: false
+Layout/SpaceInsideHashLiteralBraces:
+  EnforcedStyle: space
+Lint/ConstantResolution:
+  Enabled: false
+Lint/RedundantSplatExpansion:
+  Enabled: false
 Metrics/AbcSize:
   Enabled: false
-
-Metrics/ClassLength:
-  Enabled: false
-
-Metrics/CyclomaticComplexity:
-  Enabled: false
-
-Metrics/PerceivedComplexity:
-  Enabled: false
-
-Metrics/MethodLength:
-  Enabled: false
-
-Metrics/ModuleLength:
-  Enabled: false
-
-Metrics/ParameterLists:
-  Enabled: false
-
 Metrics/BlockLength:
   Enabled: false
-
-Naming/FileName:
-  Exclude: ['Gemfile', 'Guardfile']
-
-Naming/MethodParameterName:
+Metrics/ClassLength:
   Enabled: false
-
-Style/AccessModifierDeclarations:
-  EnforcedStyle: inline
-
-Style/BlockDelimiters:
+Metrics/MethodLength:
+  Max: 30
+Naming/RescuedExceptionsVariableName:
+  Enabled: false
+Performance/ChainArrayAllocation:
+  Enabled: false
+Performance/RedundantBlockCall:
+  Enabled: false
+RSpec/AlignLeftLetBrace:
+  Enabled: false
+RSpec/AlignRightLetBrace:
+  Enabled: false
+RSpec/DescribeClass:
   Exclude:
-    - 'spec/**/*_spec.rb'
-
-Style/Documentation:
-  Enabled: false
-
-Style/DoubleNegation:
-  Enabled: false
-
-# Enable this to ease the transition to Ruby 3.0 where string literals will be frozen by default.
-Style/FrozenStringLiteralComment:
-  Enabled: false
-
-Style/IfUnlessModifier:
-  Enabled: false
-
-Style/FormatStringToken:
-  EnforcedStyle: template
-
-# Disable Style/NumericLiterals so numbers don't need underscores
-Style/NumericLiterals:
-  Enabled: false
-
-Style/NumericPredicate:
-  EnforcedStyle: comparison
-
-Style/RedundantBegin:
-  Enabled: false
-
-Style/RegexpLiteral:
-  EnforcedStyle: slashes
-  AllowInnerSlashes: true
-  Exclude:
-    - 'Guardfile'
-
-Style/SymbolArray:
-  Enabled: false
-
-Style/TrailingCommaInArguments:
-  EnforcedStyleForMultiline: consistent_comma
-
-Style/TrailingCommaInArrayLiteral:
-  EnforcedStyleForMultiline: consistent_comma
-
-Style/TrailingCommaInHashLiteral:
-  EnforcedStyleForMultiline: consistent_comma
-
-RSpec/AnyInstance:
-  Enabled: false
-
-RSpec/Be:
-  Enabled: false
-
+    # feature specs describe a scenario/flow rather than a single class
+    - spec/features/**/*
 RSpec/DescribedClass:
-  EnforcedStyle: explicit
-
+  Enabled: false
 RSpec/ExampleLength:
+  Max: 8
+  Exclude:
+    # for spec performance reasons, it's often a good idea to make feature specs check multiple
+    # things in a single example
+    - spec/features/**/*
+RSpec/ExpectChange:
+  EnforcedStyle: block
+RSpec/ExpectInHook:
   Enabled: false
-
-RSpec/HookArgument:
-  EnforcedStyle: each
-
-RSpec/MultipleExpectations:
+RSpec/MessageExpectation:
   Enabled: false
-
-RSpec/ImplicitExpect:
-  EnforcedStyle: should
-
-RSpec/ImplicitSubject:
-  Enabled: false
-
 RSpec/MessageSpies:
-  EnforcedStyle: receive
-
+  Enabled: false
+RSpec/MultipleExpectations:
+  Exclude:
+    # for spec performance reasons, it's often a good idea to make feature specs check multiple
+    # things in a single example
+    - spec/features/**/*
 RSpec/NestedGroups:
   Enabled: false
-
-RSpec/NotToNot:
-  EnforcedStyle: to_not
-
-RSpec/VerifiedDoubles:
+Style/BlockDelimiters:
   Enabled: false
+Style/ClassAndModuleChildren:
+  EnforcedStyle: compact
+Style/CollectionMethods:
+  Enabled: false
+Style/ConstantVisibility:
+  Enabled: false
+Style/Copyright:
+  Enabled: false
+Style/DisableCopsWithinSourceCodeDirective:
+  Enabled: false
+Style/Documentation:
+  Enabled: false
+Style/DocumentationMethod:
+  Enabled: false
+Style/EmptyCaseCondition:
+  Enabled: false
+Style/FrozenStringLiteralComment:
+  Enabled: true
+Style/GlobalVars:
+  Enabled: false
+Style/GuardClause:
+  Enabled: false
+Style/IfUnlessModifier:
+  Enabled: false
+Style/InlineComment:
+  Enabled: false
+Style/Lambda:
+  Enabled: false
+Style/MethodCallWithArgsParentheses:
+  IgnoredMethods:
+    - desc
+    - gem
+    - fail
+    - file
+    - head
+    - include
+    - integer
+    - load
+    - p
+    - print
+    - puts
+    - render
+    - require
+    - require_relative
+    - ruby
+    - run
+    - string
+    - source
+Style/MissingElse:
+  Enabled: false
+Style/NegatedIf:
+  Enabled: false
+Style/ImplicitRuntimeError:
+  Enabled: false
+Style/MethodCalledOnDoEndBlock:
+  Enabled: false
+Style/NumericPredicate:
+  Enabled: false
+Style/ParenthesesAroundCondition:
+  Enabled: false
+Style/RescueModifier:
+  Enabled: false
+Style/RescueStandardError:
+  Enabled: false
+Style/ReturnNil:
+  Enabled: false
+Style/RegexpLiteral:
+  Enabled: false
+Style/Semicolon:
+  Enabled: false
+Style/SignalException:
+  Enabled: false
+Style/StderrPuts:
+  Enabled: false
+Style/StringHashKeys:
+  Enabled: false
+Style/TernaryParentheses:
+  Enabled: false
+Style/TrailingCommaInArguments:
+  EnforcedStyleForMultiline: comma
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: comma
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: comma

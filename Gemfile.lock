@@ -3,6 +3,7 @@ PATH
   specs:
     percy-style (0.7.0)
       rubocop (~> 0.86)
+      rubocop-performance (~> 1.6)
       rubocop-rspec (~> 1.40)
 
 GEM
@@ -27,6 +28,8 @@ GEM
       unicode-display_width (>= 1.4.0, < 2.0)
     rubocop-ast (0.1.0)
       parser (>= 2.7.0.1)
+    rubocop-performance (1.6.1)
+      rubocop (>= 0.71.0)
     rubocop-rspec (1.40.0)
       rubocop (>= 0.68.1)
     ruby-progressbar (1.10.1)

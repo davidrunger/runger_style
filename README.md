@@ -39,3 +39,9 @@ $ bundle exec rubocop
 You do not need to include rubocop directly in your application's dependencies. Instead,
 `runger_style` depends on specific versions of `rubocop`, `rubocop-rspec`, and `rubocop-performance`
 that will be shared across all projects.
+
+## Inspiration / Credits
+
+This gem is inspired by (/ largely copied from) https://github.com/percy/percy-style , which was
+written about here: https://blog.percy.io/share-rubocop-rules-across-all-of-your-repos-f3281fbd71f8
+.

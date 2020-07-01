@@ -1,8 +1,6 @@
 # frozen_string_literal: true
 
-lib = File.expand_path('lib', __dir__)
-$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'runger_style/version'
+require_relative 'lib/runger_style/version'
 
 Gem::Specification.new do |spec|
   spec.name          = 'runger_style'
@@ -11,9 +9,15 @@ Gem::Specification.new do |spec|
   spec.email         = ['davidjrunger@gmail.com']
 
   spec.summary       = 'Shared rubocop rules for the preferred Ruby coding style of @davidrunger'
+  spec.description   = 'Shared rubocop rules for the preferred Ruby coding style of @davidrunger'
   spec.homepage      = 'https://github.com/davidrunger/runger_style'
+  spec.license       = 'MIT'
 
   spec.metadata['allowed_push_host'] = 'https://www.davidrunger.com/'
+  spec.metadata['homepage_uri'] = spec.homepage
+  spec.metadata['source_code_uri'] = 'https://github.com/davidrunger/runger_style'
+  spec.metadata['changelog_uri'] =
+    'https://github.com/davidrunger/runger_style/blob/master/CHANGELOG.md'
 
   spec.files =
     `git ls-files -z`.split("\x0").reject do |f|

@@ -1,16 +1,9 @@
 # Releasing
 
-1. Update version.rb file accordingly.
-1. Tag the release: `git tag vVERSION`
-1. Push changes: `git push --tags`
-1. Update the release notes on GitHub.com
-1. Build and publish:
-
-```bash
-bundle exec rake build
-gem push pkg/percy-style-X.XX.XX.gem
-```
-
-* Announce the new release,
-   making sure to say "thank you" to the contributors
-   who helped shape this version!
+1. check out the `master` branch
+2. update `CHANGELOG.md`
+3. update the version number in `version.rb`
+4. `bundle install` (which will update `Gemfile.lock`)
+5. commit the changes with a message like `Prepare to release v0.1.1`
+6. run `bin/release` (which will create a git tag for the version and push git commits and
+   tags to GitHub)

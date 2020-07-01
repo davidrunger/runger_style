@@ -1,0 +1,27 @@
+# frozen_string_literal: true
+
+lib = File.expand_path('lib', __dir__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+require 'runger_style/version'
+
+Gem::Specification.new do |spec|
+  spec.name          = 'runger_style'
+  spec.version       = RungerStyle::VERSION
+  spec.authors       = ['David Runger']
+  spec.email         = ['davidjrunger@gmail.com']
+
+  spec.summary       = 'Shared rubocop rules for the preferred Ruby coding style of @davidrunger'
+  spec.homepage      = 'https://github.com/davidrunger/runger_style'
+
+  spec.metadata['allowed_push_host'] = 'https://www.davidrunger.com/'
+
+  spec.files =
+    `git ls-files -z`.split("\x0").reject do |f|
+      f.match(%r{^(test|spec|features)/})
+    end
+  spec.require_paths = ['lib']
+
+  spec.add_runtime_dependency('rubocop', '~> 0.86')
+  spec.add_runtime_dependency('rubocop-performance', '~> 1.6')
+  spec.add_runtime_dependency('rubocop-rspec', '~> 1.40')
+end

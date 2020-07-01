@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    percy-style (0.7.0)
+    runger_style (0.1.0)
       rubocop (~> 0.86)
       rubocop-performance (~> 1.6)
       rubocop-rspec (~> 1.40)
@@ -40,8 +40,8 @@ PLATFORMS
 
 DEPENDENCIES
   bundler
-  percy-style!
   rake
+  runger_style!
 
 BUNDLED WITH
    2.1.4

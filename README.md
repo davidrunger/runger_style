@@ -1,43 +1,41 @@
-# percy-style
+# `runger_style`
 
-Percy shared style configs.
+Shared rubocop rules for the preferred Ruby coding style of [@davidrunger][1].
+
+[1]: https://github.com/davidrunger/
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-```ruby
+```rb
 group :test, :development do
-  gem 'percy-style'
+  gem 'runger_style'
 end
-```
-
-Or, for a Ruby library, add this to your gemspec:
-
-```ruby
-spec.add_development_dependency 'percy-style'
 ```
 
 And then run:
 
-```bash
+```
 $ bundle install
 ```
 
 ## Usage
 
-Create a `.rubocop.yml` with the following directives:
+Create a `.rubocop.yml` file with the following directive:
 
-```yaml
+```yml
 inherit_gem:
-  percy-style:
+  runger_style:
     - default.yml
 ```
 
-Now, run:
+Then, run:
 
 ```bash
 $ bundle exec rubocop
 ```
 
-You do not need to include rubocop directly in your application's dependencies. Percy-style will include a specific version of `rubocop` and `rubocop-rspec` that is shared across all projects.
+You do not need to include rubocop directly in your application's dependencies. Instead,
+`runger_style` depends on specific versions of `rubocop`, `rubocop-rspec`, and `rubocop-performance`
+that will be shared across all projects.

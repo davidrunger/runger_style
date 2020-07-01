@@ -23,7 +23,7 @@ Add this line to your application's Gemfile:
 
 ```rb
 group :test, :development do
-  gem 'runger_style'
+  gem 'runger_style', github: 'davidrunger/runger_style'
 end
 ```
 

@@ -36,9 +36,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bundler (~> 2.1)
+  bundler
   percy-style!
-  rake (~> 13.0)
+  rake
 
 BUNDLED WITH
    2.1.4

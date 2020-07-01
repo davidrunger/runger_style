@@ -39,19 +39,41 @@ Create a `.rubocop.yml` file with the following directive:
 
 ```yml
 inherit_gem:
-  runger_style:
-    - default.yml
+  runger_style: rulesets/default.yml
 ```
 
 Then, run:
 
-```bash
+```
 $ bundle exec rubocop
 ```
 
-You do not need to include rubocop directly in your application's dependencies. Instead,
-`runger_style` depends on specific versions of `rubocop`, `rubocop-rspec`, and `rubocop-performance`
-that will be shared across all projects.
+If you have a `spec/` directory that contains RSpec tests, then you might also want to create (or
+already have) a spec-specific `spec/.rubocop.yml` file and add this content:
+
+```yml
+# spec/.rubocop.yml
+inherit_gem:
+  runger_style: rulesets/specs.yml
+```
+
+If you have a `bin/` directory that contains binstubs, then you might also want to create (or
+already have) a spec-specific `bin/.rubocop.yml` file and add this content:
+
+```yml
+# bin/.rubocop.yml
+inherit_gem:
+  runger_style: rulesets/bin.yml
+```
+
+If you have a `db/migrate/` directory that contains Rails migrations, then you might also want to
+create (or already have) a migration-specific `db/migrate/.rubocop.yml` file and add this content:
+
+```yml
+# db/migrate/.rubocop.yml
+inherit_gem:
+  runger_style: rulesets/migrations.yml
+```
 
 # Inspiration / Credits
 

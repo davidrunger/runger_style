@@ -1,0 +1,165 @@
+require: rubocop-rspec
+
+AllCops:
+  TargetRubyVersion: 2.4
+  Include:
+    - Rakefile
+    - lib/**/*.rake
+  Exclude:
+    - 'vendor/**/*'
+    - '*.gemspec'
+
+Bundler/OrderedGems:
+  Enabled: false
+
+Layout/ArgumentAlignment:
+  EnforcedStyle: with_fixed_indentation
+
+Layout/ParameterAlignment:
+  EnforcedStyle: with_fixed_indentation
+
+Layout/CaseIndentation:
+  EnforcedStyle: end
+
+Layout/EndAlignment:
+  EnforcedStyleAlignWith: variable
+
+Layout/FirstArrayElementIndentation:
+  EnforcedStyle: consistent
+
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+
+Layout/MultilineOperationIndentation:
+  EnforcedStyle: indented
+
+Layout/SpaceInsideHashLiteralBraces:
+  EnforcedStyle: no_space
+
+# This seems to break some require lines somehow:
+Layout/EmptyLinesAroundArguments:
+  Enabled: false
+
+Lint/RescueException:
+  Exclude:
+    - 'lib/tasks/*.rake'
+
+Metrics/LineLength:
+  Max: 100
+
+Metrics/AbcSize:
+  Enabled: false
+
+Metrics/ClassLength:
+  Enabled: false
+
+Metrics/CyclomaticComplexity:
+  Enabled: false
+
+Metrics/PerceivedComplexity:
+  Enabled: false
+
+Metrics/MethodLength:
+  Enabled: false
+
+Metrics/ModuleLength:
+  Enabled: false
+
+Metrics/ParameterLists:
+  Enabled: false
+
+Metrics/BlockLength:
+  Enabled: false
+
+Naming/FileName:
+  Exclude: ['Gemfile', 'Guardfile']
+
+Naming/MethodParameterName:
+  Enabled: false
+
+Style/AccessModifierDeclarations:
+  EnforcedStyle: inline
+
+Style/BlockDelimiters:
+  Exclude:
+    - 'spec/**/*_spec.rb'
+
+Style/Documentation:
+  Enabled: false
+
+Style/DoubleNegation:
+  Enabled: false
+
+# Enable this to ease the transition to Ruby 3.0 where string literals will be frozen by default.
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/IfUnlessModifier:
+  Enabled: false
+
+Style/FormatStringToken:
+  EnforcedStyle: template
+
+# Disable Style/NumericLiterals so numbers don't need underscores
+Style/NumericLiterals:
+  Enabled: false
+
+Style/NumericPredicate:
+  EnforcedStyle: comparison
+
+Style/RedundantBegin:
+  Enabled: false
+
+Style/RegexpLiteral:
+  EnforcedStyle: slashes
+  AllowInnerSlashes: true
+  Exclude:
+    - 'Guardfile'
+
+Style/SymbolArray:
+  Enabled: false
+
+Style/TrailingCommaInArguments:
+  EnforcedStyleForMultiline: consistent_comma
+
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: consistent_comma
+
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: consistent_comma
+
+RSpec/AnyInstance:
+  Enabled: false
+
+RSpec/Be:
+  Enabled: false
+
+RSpec/DescribedClass:
+  EnforcedStyle: explicit
+
+RSpec/ExampleLength:
+  Enabled: false
+
+RSpec/HookArgument:
+  EnforcedStyle: each
+
+RSpec/MultipleExpectations:
+  Enabled: false
+
+RSpec/ImplicitExpect:
+  EnforcedStyle: should
+
+RSpec/ImplicitSubject:
+  Enabled: false
+
+RSpec/MessageSpies:
+  EnforcedStyle: receive
+
+RSpec/NestedGroups:
+  Enabled: false
+
+RSpec/NotToNot:
+  EnforcedStyle: to_not
+
+RSpec/VerifiedDoubles:
+  Enabled: false

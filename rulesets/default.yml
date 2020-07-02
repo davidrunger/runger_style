@@ -1,17 +1,13 @@
-require:
-  - rubocop-performance
-  - rubocop-rspec
 AllCops:
   EnabledByDefault: true
   Exclude:
     - db/schema.rb # auto-generated file; best to leave as-is
     - node_modules/**/*
+    - vendor/bundle/**/*
   TargetRubyVersion: 2.7
+  UseCache: true
 Bundler/GemComment:
   Enabled: false
-FactoryBot/AttributeDefinedStatically:
-  Exclude:
-    - spec/support/fixture_builder.rb # false positives get raised in this file
 Layout/ArgumentAlignment:
   EnforcedStyle: with_fixed_indentation
 Layout/ClassStructure:
@@ -43,6 +39,9 @@ Layout/SpaceBeforeSemicolon:
   Enabled: false
 Layout/SpaceInsideHashLiteralBraces:
   EnforcedStyle: space
+Lint/AmbiguousBlockAssociation:
+  Exclude:
+    - spec/**/*.rb
 Lint/ConstantResolution:
   Enabled: false
 Lint/RedundantSplatExpansion:
@@ -56,41 +55,6 @@ Metrics/ClassLength:
 Metrics/MethodLength:
   Max: 30
 Naming/RescuedExceptionsVariableName:
-  Enabled: false
-Performance/ChainArrayAllocation:
-  Enabled: false
-Performance/RedundantBlockCall:
-  Enabled: false
-RSpec/AlignLeftLetBrace:
-  Enabled: false
-RSpec/AlignRightLetBrace:
-  Enabled: false
-RSpec/DescribeClass:
-  Exclude:
-    # feature specs describe a scenario/flow rather than a single class
-    - spec/features/**/*
-RSpec/DescribedClass:
-  Enabled: false
-RSpec/ExampleLength:
-  Max: 8
-  Exclude:
-    # for spec performance reasons, it's often a good idea to make feature specs check multiple
-    # things in a single example
-    - spec/features/**/*
-RSpec/ExpectChange:
-  EnforcedStyle: block
-RSpec/ExpectInHook:
-  Enabled: false
-RSpec/MessageExpectation:
-  Enabled: false
-RSpec/MessageSpies:
-  Enabled: false
-RSpec/MultipleExpectations:
-  Exclude:
-    # for spec performance reasons, it's often a good idea to make feature specs check multiple
-    # things in a single example
-    - spec/features/**/*
-RSpec/NestedGroups:
   Enabled: false
 Style/BlockDelimiters:
   Enabled: false
@@ -118,41 +82,68 @@ Style/GuardClause:
   Enabled: false
 Style/IfUnlessModifier:
   Enabled: false
+Style/ImplicitRuntimeError:
+  Enabled: false
 Style/InlineComment:
   Enabled: false
 Style/Lambda:
   Enabled: false
 Style/MethodCallWithArgsParentheses:
   IgnoredMethods:
+    - add_column
+    - add_foreign_key
+    - add_index
+    - add_reference
+    - belongs_to
+    - bigint
+    - change
+    - change_column
+    - change_column_null
+    - create_table
+    - datetime
     - desc
-    - gem
+    - describe
+    - drop_table
     - fail
     - file
+    - float
+    - foreign_key
+    - gem
     - head
     - include
+    - index
+    - inet
     - integer
+    - jsonb
     - load
+    - not_to
     - p
     - print
     - puts
+    - references
+    - remove_column
+    - remove_index
     - render
     - require
     - require_relative
     - ruby
     - run
-    - string
     - source
+    - string
+    - text
+    - timestamp
+    - to
+Style/MethodCalledOnDoEndBlock:
+  Enabled: false
 Style/MissingElse:
   Enabled: false
 Style/NegatedIf:
   Enabled: false
-Style/ImplicitRuntimeError:
-  Enabled: false
-Style/MethodCalledOnDoEndBlock:
-  Enabled: false
 Style/NumericPredicate:
   Enabled: false
 Style/ParenthesesAroundCondition:
+  Enabled: false
+Style/RegexpLiteral:
   Enabled: false
 Style/RescueModifier:
   Enabled: false
@@ -160,10 +151,11 @@ Style/RescueStandardError:
   Enabled: false
 Style/ReturnNil:
   Enabled: false
-Style/RegexpLiteral:
-  Enabled: false
 Style/Semicolon:
   Enabled: false
+Style/Send:
+  Exclude:
+    - spec/**/*.rb
 Style/SignalException:
   Enabled: false
 Style/StderrPuts:

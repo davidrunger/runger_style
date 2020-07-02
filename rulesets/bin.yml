@@ -1,7 +1,0 @@
-inherit_from:
-  - ./default.yml
-
-Metrics/CyclomaticComplexity:
-  Enabled: false
-Metrics/PerceivedComplexity:
-  Enabled: false

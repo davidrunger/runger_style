@@ -7,4 +7,6 @@ gemspec
 group :development, :test do
   gem 'bundler'
   gem 'rake'
+  gem 'rubocop'
+  gem 'rubocop-performance'
 end

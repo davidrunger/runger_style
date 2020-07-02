@@ -1,0 +1,34 @@
+require:
+  - rubocop-rspec
+
+FactoryBot/AttributeDefinedStatically:
+  Exclude:
+    - spec/support/fixture_builder.rb # false positives get raised in this file
+RSpec/ExampleLength:
+  Enabled: false
+RSpec/HookArgument:
+  Enabled: false
+RSpec/MultipleExpectations:
+  Enabled: false
+RSpec/SubjectStub:
+  Enabled: false
+RSpec/AlignLeftLetBrace:
+  Enabled: false
+RSpec/AlignRightLetBrace:
+  Enabled: false
+RSpec/DescribeClass:
+  Exclude:
+    # feature specs describe a scenario/flow rather than a single class
+    - spec/features/**/*
+RSpec/DescribedClass:
+  Enabled: false
+RSpec/ExpectChange:
+  EnforcedStyle: block
+RSpec/ExpectInHook:
+  Enabled: false
+RSpec/MessageExpectation:
+  Enabled: false
+RSpec/MessageSpies:
+  Enabled: false
+RSpec/NestedGroups:
+  Enabled: false

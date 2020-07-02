@@ -1,0 +1,21 @@
+require:
+  - rubocop-rails
+
+Rails:
+  Exclude:
+    - bin/* # `bin/` files don't have access to Rails add-on methods like `#present?`
+Rails/BulkChangeTable:
+  Exclude:
+    - !ruby/regexp /db/migrate/201[1-9].*\.rb\z/
+Rails/CreateTableWithTimestamps:
+  Exclude:
+    - !ruby/regexp /db/migrate/201[1-9].*\.rb\z/
+Rails/Output:
+  Enabled: false
+Rails/NotNullColumn:
+  Enabled: false
+Rails/RakeEnvironment:
+  Enabled: false
+Rails/ReversibleMigration:
+  Exclude:
+    - !ruby/regexp /db/migrate/201[1-9].*\.rb\z/

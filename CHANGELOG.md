@@ -1,3 +1,7 @@
+## Unreleased
+### BREAKING CHANGE
+- Break up rulesets based on plugin gem, not code directory
+
 ## v0.1.3 (2020-07-01)
 ### Added
 - Don't require parens for `#inet` calls in migrations

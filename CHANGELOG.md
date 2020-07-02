@@ -1,4 +1,4 @@
-## Unreleased
+## v0.2.0 (2020-07-02)
 ### BREAKING CHANGE
 - Break up rulesets based on plugin gem, not code directory
 

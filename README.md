@@ -58,7 +58,7 @@ inherit_gem:
 ```
 
 If you have a `bin/` directory that contains binstubs, then you might also want to create (or
-already have) a spec-specific `bin/.rubocop.yml` file and add this content:
+already have) a binstubs-specific `bin/.rubocop.yml` file and add this content:
 
 ```yml
 # bin/.rubocop.yml

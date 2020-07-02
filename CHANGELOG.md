@@ -1,3 +1,7 @@
+## Unreleased
+### Docs
+- Fix typo in README.md ("spec-specific" => "binstubs-specific")
+
 ## v0.1.1 (2020-07-01)
 ### Added
 - Add rulesets specifically designed for `spec/` and `db/migrate/` directories

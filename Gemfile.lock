@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    runger_style (0.1.1)
+    runger_style (0.1.2.alpha)
       rubocop (~> 0.86)
       rubocop-performance (~> 1.6)
       rubocop-rspec (~> 1.40)

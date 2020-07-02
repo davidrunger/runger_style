@@ -24,7 +24,7 @@ Add this line to your application's Gemfile:
 ```rb
 # file: Gemfile
 
-group :test, :development do
+group :development, :test do
   gem 'runger_style', github: 'davidrunger/runger_style', require: false
 end
 ```

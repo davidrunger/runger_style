@@ -1,1 +1,3 @@
-inherit_from: rulesets/default.yml
+inherit_from:
+  - rulesets/default.yml
+  - rulesets/performance.yml

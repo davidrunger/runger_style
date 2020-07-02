@@ -22,8 +22,10 @@ Shared rubocop rules for the preferred Ruby coding style of [@davidrunger][1].
 Add this line to your application's Gemfile:
 
 ```rb
+# file: Gemfile
+
 group :test, :development do
-  gem 'runger_style', github: 'davidrunger/runger_style'
+  gem 'runger_style', github: 'davidrunger/runger_style', require: false
 end
 ```
 
@@ -35,44 +37,46 @@ $ bundle install
 
 # Usage
 
-Create a `.rubocop.yml` file with the following directive:
+Create a `.rubocop.yml` file, including as many of the directives below as appropriate/desired.
 
 ```yml
+# file: .rubocop.yml
+
 inherit_gem:
-  runger_style: rulesets/default.yml
+  runger_style:
+    - rulesets/default.yml # gem 'rubocop'
+    - rulesets/performance.yml # gem 'rubocop-performance'
+    - rulesets/rails.yml # gem 'rubocop-rails'
+    - rulesets/rspec.yml # gem 'rubocop-rspec'
+```
+
+For example, if you're setting up rubocop configuration for a Ruby on Rails app, then it's a good
+idea to include `rulesets/rails.yml`. If your application or library uses RSpec for testing, then
+it's a good idea to include `rulesets/rspec.yml`. If you care about performance, then it's a good
+idea to include `rulesets/performance.yml`.
+
+For each directive that you choose to include, **you'll need to make sure to also include the
+corresponding gem** (as noted in a comment for each directive in the `.rubocop.yml` snippet above)
+in the `Gemfile` of your application or library.
+
+```rb
+# file: Gemfile
+
+group :development, :test do
+  # include whichever of these gems are required, based on which ruleset(s) you use
+  gem 'rubocop', require: false
+  gem 'rubocop-performance', require: false
+  gem 'rubocop-rails', require: false
+  gem 'rubocop-rspec', require: false
+  # (as mentioned in the "Installation" section, you need the `runger_style` gem itself, too)
+  gem 'runger_style', github: 'davidrunger/runger_style', require: false
+end
 ```
 
 Then, run:
 
 ```
 $ bundle exec rubocop
-```
-
-If you have a `spec/` directory that contains RSpec tests, then you might also want to create (or
-already have) a spec-specific `spec/.rubocop.yml` file and add this content:
-
-```yml
-# spec/.rubocop.yml
-inherit_gem:
-  runger_style: rulesets/specs.yml
-```
-
-If you have a `bin/` directory that contains binstubs, then you might also want to create (or
-already have) a binstubs-specific `bin/.rubocop.yml` file and add this content:
-
-```yml
-# bin/.rubocop.yml
-inherit_gem:
-  runger_style: rulesets/bin.yml
-```
-
-If you have a `db/migrate/` directory that contains Rails migrations, then you might also want to
-create (or already have) a migration-specific `db/migrate/.rubocop.yml` file and add this content:
-
-```yml
-# db/migrate/.rubocop.yml
-inherit_gem:
-  runger_style: rulesets/migrations.yml
 ```
 
 # Inspiration / Credits

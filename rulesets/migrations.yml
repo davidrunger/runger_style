@@ -27,6 +27,7 @@ Style/MethodCallWithArgsParentheses:
     - head
     - include
     - index
+    - inet
     - integer
     - jsonb
     - load

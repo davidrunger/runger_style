@@ -1,3 +1,7 @@
+## Unreleased
+### Added
+- Don't require parens for `#inet` calls in migrations
+
 ## v0.1.2 (2020-07-01)
 ### Docs
 - Fix typo in README.md ("spec-specific" => "binstubs-specific")

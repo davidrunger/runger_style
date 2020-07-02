@@ -1,4 +1,4 @@
-## Unreleased
+## v0.1.3 (2020-07-01)
 ### Added
 - Don't require parens for `#inet` calls in migrations
 

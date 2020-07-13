@@ -1,3 +1,7 @@
+## Unreleased
+### Added
+- Disable `Style/RedundantFileExtensionInRequire` rule
+
 ## v0.2.1 (2020-07-02)
 ### Docs
 - Alphabetize suggested ordering of `:development` and `:test` groups in Gemfile

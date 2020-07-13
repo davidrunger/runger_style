@@ -143,6 +143,8 @@ Style/NumericPredicate:
   Enabled: false
 Style/ParenthesesAroundCondition:
   Enabled: false
+Style/RedundantFileExtensionInRequire:
+  Enabled: false
 Style/RegexpLiteral:
   Enabled: false
 Style/RescueModifier:

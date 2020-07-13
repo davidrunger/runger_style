@@ -1,3 +1,7 @@
+## Unreleased
+### Added
+- Disable `Style/HashLikeCase` rule
+
 ## v0.2.2 (2020-07-13)
 ### Added
 - Disable `Style/RedundantFileExtensionInRequire` rule

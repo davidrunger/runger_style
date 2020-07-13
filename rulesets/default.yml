@@ -80,6 +80,8 @@ Style/GlobalVars:
   Enabled: false
 Style/GuardClause:
   Enabled: false
+Style/HashLikeCase:
+  Enabled: false
 Style/IfUnlessModifier:
   Enabled: false
 Style/ImplicitRuntimeError:

@@ -1,4 +1,4 @@
-## Unreleased
+## v0.2.3 (2020-07-13)
 ### Added
 - Disable `Style/HashLikeCase` rule
 

@@ -44,6 +44,8 @@ Lint/AmbiguousBlockAssociation:
     - spec/**/*.rb
 Lint/ConstantResolution:
   Enabled: false
+Lint/MissingSuper:
+  Enabled: false
 Lint/RedundantSplatExpansion:
   Enabled: false
 Metrics/AbcSize:

@@ -1,3 +1,8 @@
+## v0.2.4 (2020-08-05)
+### Added
+- Disable `Lint/MissingSuper` rule
+- Specify `required_ruby_version` (`>= 2.7.0`) in gemspec
+
 ## v0.2.3 (2020-07-13)
 ### Added
 - Disable `Style/HashLikeCase` rule

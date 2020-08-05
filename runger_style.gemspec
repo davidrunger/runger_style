@@ -24,4 +24,6 @@ Gem::Specification.new do |spec|
       f.match(%r{^(test|spec|features)/})
     end
   spec.require_paths = ['lib']
+
+  spec.required_ruby_version = '>= 2.7.0'
 end

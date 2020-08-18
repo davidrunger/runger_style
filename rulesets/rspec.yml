@@ -10,6 +10,8 @@ RSpec/HookArgument:
   Enabled: false
 RSpec/MultipleExpectations:
   Enabled: false
+RSpec/MultipleMemoizedHelpers:
+  Enabled: false
 RSpec/SubjectStub:
   Enabled: false
 RSpec/AlignLeftLetBrace:

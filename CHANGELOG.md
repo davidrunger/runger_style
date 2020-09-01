@@ -1,3 +1,8 @@
+## v0.2.5 (2020-09-01)
+### Added
+- Disable `Layout/EmptyLineAfterMultilineCondition` cop
+- Disable `Style/ClassMethodsDefinitions` cop
+
 ## v0.2.4 (2020-08-05)
 ### Added
 - Disable `Lint/MissingSuper` rule

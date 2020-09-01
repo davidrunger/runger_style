@@ -64,6 +64,8 @@ Style/BlockDelimiters:
   Enabled: false
 Style/ClassAndModuleChildren:
   EnforcedStyle: compact
+Style/ClassMethodsDefinitions:
+  Enabled: false
 Style/CollectionMethods:
   Enabled: false
 Style/ConstantVisibility:

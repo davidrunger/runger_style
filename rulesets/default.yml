@@ -107,6 +107,7 @@ Style/MethodCallWithArgsParentheses:
     - change
     - change_column
     - change_column_null
+    - change_table
     - create_table
     - datetime
     - desc
@@ -141,6 +142,7 @@ Style/MethodCallWithArgsParentheses:
     - text
     - timestamp
     - to
+    - visit
 Style/MethodCalledOnDoEndBlock:
   Enabled: false
 Style/MissingElse:

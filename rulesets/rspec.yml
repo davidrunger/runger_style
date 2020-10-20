@@ -12,6 +12,8 @@ RSpec/MultipleExpectations:
   Enabled: false
 RSpec/MultipleMemoizedHelpers:
   Enabled: false
+RSpec/StubbedMock:
+  Enabled: false
 RSpec/SubjectStub:
   Enabled: false
 RSpec/AlignLeftLetBrace:

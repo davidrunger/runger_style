@@ -1,4 +1,4 @@
-## v0.2.6.alpha (unreleased)
+## v0.2.6 (2021-01-01)
 ### Added
 - Don't require parens for `timestamps` method calls
 

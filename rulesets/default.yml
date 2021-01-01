@@ -141,6 +141,7 @@ Style/MethodCallWithArgsParentheses:
     - string
     - text
     - timestamp
+    - timestamps
     - to
     - visit
 Style/MethodCalledOnDoEndBlock:

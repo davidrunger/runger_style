@@ -1,3 +1,10 @@
+## v0.2.6.alpha (unreleased)
+### Added
+- Don't require parens for `timestamps` method calls
+
+### Internal
+- Use Ruby 2.7.2 (not 2.7.1) in GitHub Actions
+
 ## v0.2.5 (2020-09-01)
 ### Added
 - Disable `Layout/EmptyLineAfterMultilineCondition` cop

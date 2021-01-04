@@ -1,3 +1,7 @@
+## Unreleased
+### Added
+- Disable `Rails/OrderById` in `rulesets/rails.yml`
+
 ## v0.2.6 (2021-01-01)
 ### Added
 - Don't require parens for `timestamps` method calls

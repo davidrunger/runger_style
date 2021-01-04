@@ -1,4 +1,4 @@
-## Unreleased
+## v0.2.8 (2021-01-04)
 ### Added
 - Disabled `Naming/VariableNumber`
 - Disabled `Style/CommentAnnotation`

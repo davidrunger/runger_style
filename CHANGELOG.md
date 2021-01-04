@@ -1,4 +1,4 @@
-## Unreleased
+## v0.2.7 (2021-01-03)
 ### Added
 - Disable `Rails/OrderById` in `rulesets/rails.yml`
 

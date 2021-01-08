@@ -1,3 +1,7 @@
+## v0.2.9 (2021-01-07)
+### Added
+- Disabled `Layout/FirstMethodArgumentLineBreak`
+
 ## v0.2.8 (2021-01-04)
 ### Added
 - Disabled `Naming/VariableNumber`

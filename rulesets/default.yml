@@ -23,6 +23,8 @@ Layout/DotPosition:
   EnforcedStyle: trailing
 Layout/EmptyLineAfterMultilineCondition:
   Enabled: false
+Layout/EmptyLineBetweenDefs:
+  AllowAdjacentOneLineDefs: true
 Layout/FirstArgumentIndentation:
   Enabled: false # this rule doesn't play nicely with the way that I like to use `memoize`
 Layout/FirstArrayElementIndentation:

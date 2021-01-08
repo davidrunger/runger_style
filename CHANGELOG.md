@@ -1,3 +1,7 @@
+## Unreleased
+### Changed
+- Moved `AttributeDefinedStatically` from `FactoryBot` namespace to `RSpec/FactoryBot`
+
 ## v0.2.9 (2021-01-07)
 ### Added
 - Disabled `Layout/FirstMethodArgumentLineBreak`

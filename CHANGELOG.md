@@ -1,4 +1,4 @@
-## Unreleased
+## v0.2.10 (2021-01-07)
 ### Changed
 - Moved `AttributeDefinedStatically` from `FactoryBot` namespace to `RSpec/FactoryBot`
 

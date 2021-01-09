@@ -110,6 +110,7 @@ Style/MethodCallWithArgsParentheses:
     - add_foreign_key
     - add_index
     - add_reference
+    - and
     - belongs_to
     - bigint
     - boolean

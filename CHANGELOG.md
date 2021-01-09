@@ -1,4 +1,4 @@
-## Unreleased
+## v0.2.13 (2021-01-08)
 ### Added
 - Don't require parens for `and` method calls (e.g. in RSpec compound expectations)
 

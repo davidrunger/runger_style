@@ -112,6 +112,7 @@ Style/MethodCallWithArgsParentheses:
     - add_reference
     - belongs_to
     - bigint
+    - boolean
     - change
     - change_column
     - change_column_null

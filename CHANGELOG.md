@@ -1,3 +1,7 @@
+## Unreleased
+### Added
+- Don't require parens for `boolean` method calls
+
 ## v0.2.11 (2021-01-07)
 ### Added
 - Added `Layout/EmptyLineBetweenDefs` with `AllowAdjacentOneLineDefs: true` option

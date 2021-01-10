@@ -116,6 +116,7 @@ Style/MethodCallWithArgsParentheses:
     - boolean
     - change
     - change_column
+    - change_column_default
     - change_column_null
     - change_table
     - create_table

@@ -1,4 +1,4 @@
-## Unreleased
+## v0.2.14 (2021-01-09)
 ### Added
 - Don't require parens for `change_column_default` method calls
 

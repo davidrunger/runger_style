@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    runger_style (0.2.14.alpha)
+    runger_style (0.2.14)
 
 GEM
   remote: https://rubygems.org/

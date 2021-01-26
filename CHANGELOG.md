@@ -1,3 +1,7 @@
+## Unreleased
+### Internal
+- Add some new steps to CI (check for alpha version, no git diff, etc)
+
 ## v0.2.14 (2021-01-09)
 ### Added
 - Don't require parens for `change_column_default` method calls

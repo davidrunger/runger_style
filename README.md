@@ -12,8 +12,9 @@ Shared rubocop rules for the preferred Ruby coding style of [@davidrunger][1].
    * [Installation](#installation)
    * [Usage](#usage)
    * [Inspiration / Credits](#inspiration--credits)
+   * [For maintainers](#for-maintainers)
 
-<!-- Added by: david, at: Wed Jul  1 14:46:44 PDT 2020 -->
+<!-- Added by: david, at: Tue Jan 26 02:54:38 PST 2021 -->
 
 <!--te-->
 
@@ -84,3 +85,13 @@ $ bundle exec rubocop
 This gem is inspired by (/ largely copied from) https://github.com/percy/percy-style , which was
 written about here: https://blog.percy.io/share-rubocop-rules-across-all-of-your-repos-f3281fbd71f8
 .
+
+# For maintainers
+
+To release a new version, run `bin/release` with an appropriate `--type` option, e.g.:
+
+```
+bin/release --type minor
+```
+
+(This uses the `release_assistant` gem.)

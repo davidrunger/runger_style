@@ -10,3 +10,7 @@ group :development, :test do
   gem 'rubocop'
   gem 'rubocop-performance'
 end
+
+group :development do
+  gem 'release_assistant', require: false, github: 'davidrunger/release_assistant'
+end

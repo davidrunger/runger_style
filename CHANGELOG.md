@@ -1,6 +1,7 @@
 ## Unreleased
 ### Internal
 - Add some new steps to CI (check for alpha version, no git diff, etc)
+- Use `release_assistant` gem to manage the release process
 
 ## v0.2.14 (2021-01-09)
 ### Added

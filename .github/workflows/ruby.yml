@@ -18,4 +18,10 @@ jobs:
         gem install bundler -v 2.1.4
         bundle install --jobs 4 --retry 3
     - name: Run Rubocop
-      run: bin/rubocop
+      run: bin/rubocop --format clang
+    - name: Ensure alpha version
+      run: grep alpha $(find . -type f -name version.rb)
+    - name: Ensure no git diff
+      run: git diff --exit-code && git diff-index --quiet --cached HEAD
+    - name: Ensure "## Unreleased" is in CHANGELOG.md
+      run: grep "^## Unreleased" CHANGELOG.md

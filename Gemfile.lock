@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/davidrunger/release_assistant.git
-  revision: 75eff623f621d359fa40bb80fe08dfb211d65e49
+  revision: e94daaf5b3e4447bb1de70568b110e5bec7fbc5d
   specs:
-    release_assistant (0.0.3)
+    release_assistant (0.1.1.alpha)
       activesupport (~> 6.0)
       colorize (~> 0.8)
       memoist (~> 0.16)
@@ -11,7 +11,7 @@ GIT
 PATH
   remote: .
   specs:
-    runger_style (0.2.15)
+    runger_style (0.2.16.alpha)
 
 GEM
   remote: https://rubygems.org/

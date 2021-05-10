@@ -8,6 +8,8 @@ AllCops:
   UseCache: true
 Bundler/GemComment:
   Enabled: false
+Bundler/GemVersion:
+  Enabled: false
 Layout/ArgumentAlignment:
   EnforcedStyle: with_fixed_indentation
 Layout/ClassStructure:

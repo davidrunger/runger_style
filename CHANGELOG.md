@@ -1,5 +1,6 @@
 ## Unreleased
-[no unreleased changes yet]
+### Changed
+- Disable `Bundler/GemVersion` cop
 
 ## v0.2.16 (2021-01-26)
 ### Dependencies

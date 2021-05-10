@@ -1,5 +1,6 @@
 ## Unreleased
-[no unreleased changes yet]
+### Changed
+- Disable `Layout/SingleLineBlockChain` cop
 
 ## v0.2.17 (2021-05-10)
 ### Changed

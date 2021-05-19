@@ -1,5 +1,5 @@
 # frozen_string_literal: true
 
 module RungerStyle
-  VERSION = '0.2.19'
+  VERSION = '0.2.20.alpha'
 end

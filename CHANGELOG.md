@@ -1,3 +1,6 @@
+## Unreleased
+[no unreleased changes yet]
+
 ## v0.2.20 (2021-05-19)
 ### Changed
 - Disable `Style/TopLevelMethodDefinition` in `db/datamigrate/`

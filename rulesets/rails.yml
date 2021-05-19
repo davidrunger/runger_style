@@ -10,6 +10,8 @@ Rails/BulkChangeTable:
 Rails/CreateTableWithTimestamps:
   Exclude:
     - !ruby/regexp /db/migrate/201[1-9].*\.rb\z/
+Rails/EnvironmentVariableAccess:
+  AllowReads: true
 Rails/OrderById:
   Enabled: false
 Rails/Output:

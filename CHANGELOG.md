@@ -1,4 +1,4 @@
-## Unreleased
+## v0.2.19 (2021-05-19)
 - Allow reads for `Rails/EnvironmentVariableAccess`
 
 ## v0.2.18 (2021-05-10)

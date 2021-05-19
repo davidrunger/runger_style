@@ -1,7 +1,9 @@
 ## Unreleased
-[no unreleased changes yet]
+### Changed
+- Disable `Style/TopLevelMethodDefinition` in `db/datamigrate/`
 
 ## v0.2.19 (2021-05-19)
+### Changed
 - Allow reads for `Rails/EnvironmentVariableAccess`
 
 ## v0.2.18 (2021-05-10)

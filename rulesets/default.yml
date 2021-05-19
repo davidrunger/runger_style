@@ -194,6 +194,9 @@ Style/StringHashKeys:
   Enabled: false
 Style/TernaryParentheses:
   Enabled: false
+Style/TopLevelMethodDefinition:
+  Exclude:
+    - db/datamigrate/**/*.rb
 Style/TrailingCommaInArguments:
   EnforcedStyleForMultiline: comma
 Style/TrailingCommaInArrayLiteral:

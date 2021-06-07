@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/davidrunger/release_assistant.git
-  revision: dbdd63c7191977d177461ac34ef6da4902199c56
+  revision: 1aa2ae68b9d66735f8ab7525f99d042257a698dc
   specs:
     release_assistant (0.3.3.alpha)
       activesupport (~> 6.0)
@@ -24,7 +24,7 @@ GEM
       zeitwerk (~> 2.3)
     ast (2.4.2)
     colorize (0.8.1)
-    concurrent-ruby (1.1.8)
+    concurrent-ruby (1.1.9)
     i18n (1.8.10)
       concurrent-ruby (~> 1.0)
     memoist (0.16.2)
@@ -51,7 +51,7 @@ GEM
       rubocop (>= 1.7.0, < 2.0)
       rubocop-ast (>= 0.4.0)
     ruby-progressbar (1.11.0)
-    slop (4.9.0)
+    slop (4.9.1)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
     unicode-display_width (2.0.0)

@@ -69,6 +69,8 @@ Metrics/ClassLength:
   Enabled: false
 Metrics/MethodLength:
   Max: 30
+Naming/InclusiveLanguage:
+  Enabled: false
 Naming/RescuedExceptionsVariableName:
   Enabled: false
 Naming/VariableNumber:

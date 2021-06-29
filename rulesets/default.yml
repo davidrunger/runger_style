@@ -33,6 +33,9 @@ Layout/FirstArrayElementIndentation:
   EnforcedStyle: consistent
 Layout/FirstMethodArgumentLineBreak:
   Enabled: false
+Layout/LineEndStringConcatenationIndentation:
+  Exclude:
+    - bin/*
 Layout/LineLength:
   IgnoredPatterns:
     # ignore line length if the line is a comment without any spaces; it's probably not something we
@@ -66,6 +69,8 @@ Metrics/ClassLength:
   Enabled: false
 Metrics/MethodLength:
   Max: 30
+Naming/InclusiveLanguage:
+  Enabled: false
 Naming/RescuedExceptionsVariableName:
   Enabled: false
 Naming/VariableNumber:

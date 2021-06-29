@@ -1,4 +1,4 @@
-## Unreleased
+## v0.2.21 (2021-06-28)
 [no unreleased changes yet]
 
 ## v0.2.20 (2021-05-19)

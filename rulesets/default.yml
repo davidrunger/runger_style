@@ -33,6 +33,9 @@ Layout/FirstArrayElementIndentation:
   EnforcedStyle: consistent
 Layout/FirstMethodArgumentLineBreak:
   Enabled: false
+Layout/LineEndStringConcatenationIndentation:
+  Exclude:
+    - bin/*
 Layout/LineLength:
   IgnoredPatterns:
     # ignore line length if the line is a comment without any spaces; it's probably not something we

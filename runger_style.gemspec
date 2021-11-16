@@ -13,6 +13,7 @@ Gem::Specification.new do |spec|
   spec.homepage      = 'https://github.com/davidrunger/runger_style'
   spec.license       = 'MIT'
 
+  spec.metadata['rubygems_mfa_required'] = 'true'
   spec.metadata['allowed_push_host'] = 'https://www.davidrunger.com/'
   spec.metadata['homepage_uri'] = spec.homepage
   spec.metadata['source_code_uri'] = 'https://github.com/davidrunger/runger_style'

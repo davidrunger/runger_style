@@ -23,3 +23,5 @@ Rails/RakeEnvironment:
 Rails/ReversibleMigration:
   Exclude:
     - !ruby/regexp /db/migrate/201[1-9].*\.rb\z/
+Rails/SchemaComment:
+  Enabled: false

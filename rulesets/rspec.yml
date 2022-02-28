@@ -1,6 +1,8 @@
 require:
   - rubocop-rspec
 
+RSpec/BeEq:
+  Enabled: false
 RSpec/ExampleLength:
   Enabled: false
 RSpec/FactoryBot/AttributeDefinedStatically:

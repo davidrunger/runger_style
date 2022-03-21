@@ -12,6 +12,8 @@ Rails/CreateTableWithTimestamps:
     - !ruby/regexp /db/migrate/201[1-9].*\.rb\z/
 Rails/EnvironmentVariableAccess:
   AllowReads: true
+Rails/I18nLocaleTexts:
+  Enabled: false
 Rails/OrderById:
   Enabled: false
 Rails/Output:

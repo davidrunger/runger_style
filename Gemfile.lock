@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/davidrunger/release_assistant.git
-  revision: 347f81d5d997e269772e5952a68808b2ced3f3e3
+  revision: f60cb8636215007253be4aa3c1421060ceaef0c1
   specs:
     release_assistant (0.3.3.alpha)
       activesupport (>= 6, < 8)
@@ -29,19 +29,19 @@ GEM
     memoist (0.16.2)
     minitest (5.15.0)
     parallel (1.22.1)
-    parser (3.1.1.0)
+    parser (3.1.2.0)
       ast (~> 2.4.1)
     rainbow (3.1.1)
     rake (13.0.6)
     regexp_parser (2.3.0)
     rexml (3.2.5)
-    rubocop (1.27.0)
+    rubocop (1.28.1)
       parallel (~> 1.10)
       parser (>= 3.1.0.0)
       rainbow (>= 2.2.2, < 4.0)
       regexp_parser (>= 1.8, < 3.0)
       rexml
-      rubocop-ast (>= 1.16.0, < 2.0)
+      rubocop-ast (>= 1.17.0, < 2.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 1.4.0, < 3.0)
     rubocop-ast (1.17.0)
@@ -67,4 +67,4 @@ DEPENDENCIES
   runger_style!
 
 BUNDLED WITH
-   2.2.16
+   2.2.22

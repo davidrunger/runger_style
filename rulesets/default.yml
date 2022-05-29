@@ -143,6 +143,7 @@ Style/MethodCallWithArgsParentheses:
     - index
     - inet
     - integer
+    - json
     - jsonb
     - load
     - not_to

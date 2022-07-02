@@ -26,5 +26,5 @@ Gem::Specification.new do |spec|
     end
   spec.require_paths = ['lib']
 
-  spec.required_ruby_version = '>= 2.7.0'
+  spec.required_ruby_version = '>= 3.1.0'
 end

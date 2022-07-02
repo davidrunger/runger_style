@@ -4,7 +4,7 @@ AllCops:
     - db/schema.rb # auto-generated file; best to leave as-is
     - node_modules/**/*
     - vendor/bundle/**/*
-  TargetRubyVersion: 2.7
+  TargetRubyVersion: 3.1
   UseCache: true
 Bundler/GemComment:
   Enabled: false

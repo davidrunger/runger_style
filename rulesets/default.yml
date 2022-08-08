@@ -116,7 +116,7 @@ Style/InlineComment:
 Style/Lambda:
   Enabled: false
 Style/MethodCallWithArgsParentheses:
-  IgnoredMethods:
+  AllowedMethods:
     - add_column
     - add_foreign_key
     - add_index

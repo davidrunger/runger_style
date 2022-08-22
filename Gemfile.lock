@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/davidrunger/release_assistant.git
-  revision: 69eb4b1f55120faa73fca32ee9dc04a472071321
+  revision: 89c2dc82871b1fe0d0be915b4a70295989304b70
   specs:
     release_assistant (0.3.3.alpha)
       activesupport (>= 6, < 8)
@@ -28,7 +28,7 @@ GEM
       concurrent-ruby (~> 1.0)
     json (2.6.2)
     memoist (0.16.2)
-    minitest (5.16.2)
+    minitest (5.16.3)
     parallel (1.22.1)
     parser (3.1.2.1)
       ast (~> 2.4.1)

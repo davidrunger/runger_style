@@ -101,6 +101,8 @@ Style/EmptyCaseCondition:
   Enabled: false
 Style/FrozenStringLiteralComment:
   Enabled: true
+Style/GlobalStdStream:
+  Enabled: false
 Style/GlobalVars:
   Enabled: false
 Style/GuardClause:

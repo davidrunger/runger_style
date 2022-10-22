@@ -48,6 +48,7 @@ inherit_gem:
     - rulesets/default.yml # gem 'rubocop'
     - rulesets/performance.yml # gem 'rubocop-performance'
     - rulesets/rails.yml # gem 'rubocop-rails'
+    - rulesets/rake.yml # gem 'rubocop-rake'
     - rulesets/rspec.yml # gem 'rubocop-rspec'
 ```
 
@@ -68,6 +69,7 @@ group :development, :test do
   gem 'rubocop', require: false
   gem 'rubocop-performance', require: false
   gem 'rubocop-rails', require: false
+  gem 'rubocop-rake', require: false
   gem 'rubocop-rspec', require: false
   # (as mentioned in the "Installation" section, you need the `runger_style` gem itself, too)
   gem 'runger_style', github: 'davidrunger/runger_style', require: false

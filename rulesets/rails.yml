@@ -4,6 +4,8 @@ require:
 Rails:
   Exclude:
     - bin/* # `bin/` files don't have access to Rails add-on methods like `#present?`
+Rails/ActionOrder:
+  Enabled: false
 Rails/BulkChangeTable:
   Exclude:
     - !ruby/regexp /db/migrate/201[1-9].*\.rb\z/

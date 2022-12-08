@@ -185,6 +185,9 @@ Style/RedundantFileExtensionInRequire:
   Enabled: false
 Style/RegexpLiteral:
   Enabled: false
+Style/RequireOrder:
+  Exclude:
+    - bin/*
 Style/RescueModifier:
   Enabled: false
 Style/RescueStandardError:

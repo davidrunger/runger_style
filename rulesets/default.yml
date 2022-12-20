@@ -188,6 +188,7 @@ Style/RegexpLiteral:
 Style/RequireOrder:
   Exclude:
     - bin/*
+    - spec/spec_helper.rb
 Style/RescueModifier:
   Enabled: false
 Style/RescueStandardError:

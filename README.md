@@ -45,6 +45,7 @@ Create a `.rubocop.yml` file, including as many of the directives below as appro
 
 inherit_gem:
   runger_style:
+    - rulesets/capybara.yml # gem 'rubocop-capybara'
     - rulesets/default.yml # gem 'rubocop'
     - rulesets/performance.yml # gem 'rubocop-performance'
     - rulesets/rails.yml # gem 'rubocop-rails'
@@ -67,6 +68,7 @@ in the `Gemfile` of your application or library.
 group :development, :test do
   # include whichever of these gems are required, based on which ruleset(s) you use
   gem 'rubocop', require: false
+  gem 'rubocop-capybara', require: false
   gem 'rubocop-performance', require: false
   gem 'rubocop-rails', require: false
   gem 'rubocop-rake', require: false

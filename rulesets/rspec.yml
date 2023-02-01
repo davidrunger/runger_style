@@ -5,8 +5,6 @@ RSpec/BeEq:
   Enabled: false
 RSpec/BeNil:
   Enabled: false
-RSpec/Capybara/SpecificMatcher:
-  Enabled: false
 RSpec/ExampleLength:
   Enabled: false
 RSpec/FactoryBot/AttributeDefinedStatically:

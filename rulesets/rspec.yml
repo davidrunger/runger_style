@@ -12,6 +12,8 @@ RSpec/FactoryBot/AttributeDefinedStatically:
     - spec/support/fixture_builder.rb # false positives get raised in this file
 RSpec/HookArgument:
   Enabled: false
+RSpec/IndexedLet:
+  Enabled: false
 RSpec/MultipleExpectations:
   Enabled: false
 RSpec/MultipleMemoizedHelpers:

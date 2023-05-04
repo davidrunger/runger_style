@@ -11,7 +11,7 @@ GIT
 PATH
   remote: .
   specs:
-    runger_style (0.2.22.alpha)
+    runger_style (0.2.22)
       rubocop (>= 1.38.0, < 2)
 
 GEM

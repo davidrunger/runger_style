@@ -20,13 +20,11 @@ Shared rubocop rules for the preferred Ruby coding style of [@davidrunger][1].
 
 # Installation
 
-Add this line to your application's Gemfile:
+Add this to your application's Gemfile:
 
 ```rb
-# file: Gemfile
-
 group :development, :test do
-  gem 'runger_style', github: 'davidrunger/runger_style', require: false
+  gem 'runger_style', require: false
 end
 ```
 

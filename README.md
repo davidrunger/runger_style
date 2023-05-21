@@ -72,7 +72,7 @@ group :development, :test do
   gem 'rubocop-rake', require: false
   gem 'rubocop-rspec', require: false
   # (as mentioned in the "Installation" section, you need the `runger_style` gem itself, too)
-  gem 'runger_style', github: 'davidrunger/runger_style', require: false
+  gem 'runger_style', require: false
 end
 ```
 

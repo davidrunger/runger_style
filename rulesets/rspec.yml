@@ -1,15 +1,15 @@
 require:
   - rubocop-rspec
 
+FactoryBot/AttributeDefinedStatically:
+  Exclude:
+    - spec/support/fixture_builder.rb # false positives get raised in this file
 RSpec/BeEq:
   Enabled: false
 RSpec/BeNil:
   Enabled: false
 RSpec/ExampleLength:
   Enabled: false
-RSpec/FactoryBot/AttributeDefinedStatically:
-  Exclude:
-    - spec/support/fixture_builder.rb # false positives get raised in this file
 RSpec/HookArgument:
   Enabled: false
 RSpec/IndexedLet:

@@ -1,4 +1,4 @@
-## Unreleased
+## v0.3.0 (2023-05-25)
 ### Changed
 - Disable `Metrics/ModuleLength` cop
 

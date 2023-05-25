@@ -71,6 +71,8 @@ Metrics/ClassLength:
   Enabled: false
 Metrics/MethodLength:
   Max: 30
+Metrics/ModuleLength:
+  Enabled: false
 Naming/InclusiveLanguage:
   Enabled: false
 Naming/RescuedExceptionsVariableName:

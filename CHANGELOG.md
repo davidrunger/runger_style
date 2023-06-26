@@ -1,4 +1,4 @@
-## Unreleased
+## v0.4.0 (2023-06-26)
 ### Changed
 - Disable `FactoryBot/AssociationStyle` cop
 

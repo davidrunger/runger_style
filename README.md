@@ -45,6 +45,7 @@ inherit_gem:
   runger_style:
     - rulesets/capybara.yml # gem 'rubocop-capybara'
     - rulesets/default.yml # gem 'rubocop'
+    - rulesets/factory_bot.yml # gem 'rubocop-factory_bot'
     - rulesets/performance.yml # gem 'rubocop-performance'
     - rulesets/rails.yml # gem 'rubocop-rails'
     - rulesets/rake.yml # gem 'rubocop-rake'
@@ -67,6 +68,7 @@ group :development, :test do
   # include whichever of these gems are required, based on which ruleset(s) you use
   gem 'rubocop', require: false
   gem 'rubocop-capybara', require: false
+  gem 'rubocop-factory_bot', require: false
   gem 'rubocop-performance', require: false
   gem 'rubocop-rails', require: false
   gem 'rubocop-rake', require: false

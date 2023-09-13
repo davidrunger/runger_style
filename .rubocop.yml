@@ -1,6 +1,7 @@
 inherit_from:
   - rulesets/capybara.yml
   - rulesets/default.yml
+  - rulesets/factory_bot.yml
   - rulesets/performance.yml
   - rulesets/rails.yml
   - rulesets/rake.yml

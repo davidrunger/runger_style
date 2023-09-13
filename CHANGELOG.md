@@ -1,3 +1,6 @@
+## Unreleased
+[no unreleased changes yet]
+
 ## v0.5.0 (2023-09-13)
 ### Added
 - Add factory_bot ruleset

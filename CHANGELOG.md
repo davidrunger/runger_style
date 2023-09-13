@@ -1,5 +1,6 @@
 ## Unreleased
-[no unreleased changes yet]
+### Changed
+- Move FactoryBot cops into factory_bot ruleset
 
 ## v0.5.0 (2023-09-13)
 ### Added

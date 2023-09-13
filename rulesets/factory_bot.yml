@@ -1,2 +1,8 @@
 require:
   - rubocop-factory_bot
+
+FactoryBot/AssociationStyle:
+  Enabled: false
+FactoryBot/AttributeDefinedStatically:
+  Exclude:
+    - spec/support/fixture_builder.rb # false positives get raised in this file

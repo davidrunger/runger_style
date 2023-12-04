@@ -185,6 +185,8 @@ Style/RedundantArgument:
   Enabled: false
 Style/RedundantFileExtensionInRequire:
   Enabled: false
+Style/RedundantParentheses:
+  Enabled: false
 Style/RegexpLiteral:
   Enabled: false
 Style/RequireOrder:

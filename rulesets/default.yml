@@ -21,6 +21,8 @@ Layout/ClassStructure:
       - public_methods
       - protected_methods
       - private_methods
+Layout/ConditionPosition:
+  Enabled: false
 Layout/DotPosition:
   EnforcedStyle: trailing
 Layout/EmptyLineAfterMultilineCondition:
@@ -78,6 +80,8 @@ Naming/InclusiveLanguage:
 Naming/RescuedExceptionsVariableName:
   Enabled: false
 Naming/VariableNumber:
+  Enabled: false
+Style/ArrayFirstLast:
   Enabled: false
 Style/BlockDelimiters:
   Enabled: false
@@ -184,6 +188,8 @@ Style/ParenthesesAroundCondition:
 Style/RedundantArgument:
   Enabled: false
 Style/RedundantFileExtensionInRequire:
+  Enabled: false
+Style/RedundantParentheses:
   Enabled: false
 Style/RegexpLiteral:
   Enabled: false

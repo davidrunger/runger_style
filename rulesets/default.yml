@@ -81,6 +81,8 @@ Naming/RescuedExceptionsVariableName:
   Enabled: false
 Naming/VariableNumber:
   Enabled: false
+Style/ArrayFirstLast:
+  Enabled: false
 Style/BlockDelimiters:
   Enabled: false
 Style/ClassAndModuleChildren:

@@ -21,6 +21,8 @@ Layout/ClassStructure:
       - public_methods
       - protected_methods
       - private_methods
+Layout/ConditionPosition:
+  Enabled: false
 Layout/DotPosition:
   EnforcedStyle: trailing
 Layout/EmptyLineAfterMultilineCondition:

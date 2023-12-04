@@ -1,5 +1,8 @@
 ## Unreleased
-[no unreleased changes yet]
+### Changed
+- Disable `Style/RedundantParentheses` cop
+- Disable `Layout/ConditionPosition` cop
+- Disable `Style/ArrayFirstLast` cop
 
 ## v0.5.1 (2023-09-13)
 ### Changed

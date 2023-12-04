@@ -1,4 +1,4 @@
-## Unreleased
+## v0.6.0 (2023-12-04)
 ### Changed
 - Disable `Style/RedundantParentheses` cop
 - Disable `Layout/ConditionPosition` cop

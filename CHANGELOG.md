@@ -1,5 +1,6 @@
 ## Unreleased
-[no unreleased changes yet]
+### Changed
+- Disable `Style/MultilineMethodSignature` cop
 
 ## v1.0.0 (2023-12-29)
 ### Changed

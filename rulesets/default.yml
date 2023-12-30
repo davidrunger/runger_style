@@ -179,6 +179,8 @@ Style/MethodCalledOnDoEndBlock:
   Enabled: false
 Style/MissingElse:
   Enabled: false
+Style/MultilineMethodSignature:
+  Enabled: false
 Style/NegatedIf:
   Enabled: false
 Style/NumericPredicate:

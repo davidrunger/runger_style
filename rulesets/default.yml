@@ -75,11 +75,15 @@ Metrics/MethodLength:
   Max: 30
 Metrics/ModuleLength:
   Enabled: false
+Naming/BlockForwarding:
+  Enabled: false
 Naming/InclusiveLanguage:
   Enabled: false
 Naming/RescuedExceptionsVariableName:
   Enabled: false
 Naming/VariableNumber:
+  Enabled: false
+Style/ArgumentsForwarding:
   Enabled: false
 Style/ArrayFirstLast:
   Enabled: false

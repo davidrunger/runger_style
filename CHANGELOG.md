@@ -1,4 +1,4 @@
-## Unreleased
+## v1.2.0 (2023-12-29)
 - Disable `Style/ArgumentsForwarding`
 - Disable `Naming/BlockForwarding`
 

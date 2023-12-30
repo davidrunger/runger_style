@@ -25,7 +25,7 @@ Gem::Specification.new do |spec|
     end
   spec.require_paths = ['lib']
 
-  spec.required_ruby_version = '>= 3.2.0'
+  spec.required_ruby_version = '>= 3.3.0'
 
   spec.add_runtime_dependency('rubocop', '>= 1.38.0', '< 2')
 end

@@ -1,4 +1,4 @@
-## Unreleased
+## v1.0.0 (2023-12-29)
 ### Changed
 - Bump target Ruby from 3.2 to 3.3
 

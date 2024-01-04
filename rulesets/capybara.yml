@@ -1,5 +1,7 @@
 require:
   - rubocop-capybara
 
+Capybara/NegationMatcher:
+  EnforcedStyle: not_to
 Capybara/SpecificMatcher:
   Enabled: false

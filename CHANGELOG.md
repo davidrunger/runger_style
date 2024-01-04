@@ -2,7 +2,7 @@
 [no unreleased changes yet]
 
 ## v1.3.0 (2024-01-04)
-[no unreleased changes yet]
+- Disable `Capybara/NegationMatcher`
 
 ## v1.2.0 (2023-12-29)
 - Disable `Style/ArgumentsForwarding`

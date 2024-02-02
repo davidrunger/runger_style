@@ -1,3 +1,6 @@
+## Unreleased
+[no unreleased changes yet]
+
 ## v1.4.0 (2024-02-01)
 - Disable `Style/MultilineBlockChain`
 

@@ -183,6 +183,8 @@ Style/MethodCalledOnDoEndBlock:
   Enabled: false
 Style/MissingElse:
   Enabled: false
+Style/MultilineBlockChain:
+  Enabled: false
 Style/MultilineMethodSignature:
   Enabled: false
 Style/NegatedIf:

@@ -1,5 +1,5 @@
 ## Unreleased
-[no unreleased changes yet]
+- Specify Ruby version in Gemfile (via .ruby-version file)
 
 ## v1.5.0 (2024-02-02)
 - Source Ruby version from `.ruby-version` file

@@ -212,7 +212,8 @@ Style/RescueStandardError:
 Style/ReturnNil:
   Enabled: false
 Style/Semicolon:
-  Enabled: false
+  AllowAsExpressionSeparator: true
+  Enabled: true
 Style/Send:
   Exclude:
     - spec/**/*.rb

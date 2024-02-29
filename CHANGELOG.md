@@ -1,5 +1,5 @@
 ## Unreleased
-[no unreleased changes yet]
+- Enable `Style/Semicolon` with `AllowAsExpressionSeparator: true`
 
 ## v1.6.0 (2024-02-02)
 - Specify Ruby version in Gemfile (via .ruby-version file)

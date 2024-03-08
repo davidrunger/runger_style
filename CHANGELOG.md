@@ -1,5 +1,5 @@
 ## Unreleased
-[no unreleased changes yet]
+- Use prism as parser
 
 ## v1.7.0 (2024-02-28)
 - Enable `Style/Semicolon` with `AllowAsExpressionSeparator: true`

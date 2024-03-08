@@ -4,6 +4,7 @@ AllCops:
     - db/schema.rb # auto-generated file; best to leave as-is
     - node_modules/**/*
     - vendor/bundle/**/*
+  ParserEngine: parser_prism
   TargetRubyVersion: 3.3
   UseCache: true
 Bundler/GemComment:

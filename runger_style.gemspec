@@ -27,5 +27,6 @@ Gem::Specification.new do |spec|
 
   spec.required_ruby_version = Gem::Requirement.new(">= #{File.read('.ruby-version').rstrip}")
 
+  spec.add_runtime_dependency('prism', '>= 0.24.0')
   spec.add_runtime_dependency('rubocop', '>= 1.38.0', '< 2')
 end

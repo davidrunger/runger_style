@@ -1,9 +1,5 @@
 AllCops:
   EnabledByDefault: true
-  Exclude:
-    - db/schema.rb # auto-generated file; best to leave as-is
-    - node_modules/**/*
-    - vendor/bundle/**/*
   ParserEngine: parser_prism
   TargetRubyVersion: 3.3
   UseCache: true
@@ -11,6 +7,9 @@ Bundler/GemComment:
   Enabled: false
 Bundler/GemVersion:
   Enabled: false
+Layout:
+  Exclude:
+    - db/schema.rb
 Layout/ArgumentAlignment:
   EnforcedStyle: with_fixed_indentation
 Layout/ClassStructure:
@@ -84,6 +83,9 @@ Naming/RescuedExceptionsVariableName:
   Enabled: false
 Naming/VariableNumber:
   Enabled: false
+Style:
+  Exclude:
+    - db/schema.rb
 Style/ArgumentsForwarding:
   Enabled: false
 Style/ArrayFirstLast:

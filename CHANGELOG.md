@@ -1,4 +1,4 @@
-## Unreleased
+## v2.1.0 (2024-03-15)
 - Remove global exclusions and lint db/schema.rb except for some cops
 
 ## v2.0.0 (2024-03-08)

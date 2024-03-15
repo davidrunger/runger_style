@@ -1,5 +1,5 @@
 ## Unreleased
-[no unreleased changes yet]
+- Remove global exclusions and lint db/schema.rb except for some cops
 
 ## v2.0.0 (2024-03-08)
 - Use prism as parser

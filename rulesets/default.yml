@@ -79,6 +79,9 @@ Naming/BlockForwarding:
   Enabled: false
 Naming/InclusiveLanguage:
   Enabled: false
+Naming/PredicateName:
+  ForbiddenPrefixes:
+    - is_
 Naming/RescuedExceptionsVariableName:
   Enabled: false
 Naming/VariableNumber:

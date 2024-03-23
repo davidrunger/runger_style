@@ -1,4 +1,4 @@
-## Unreleased
+## v2.2.0 (2024-03-23)
 - Limit ForbiddenPrefixes for Naming/PredicateName to "is_"
 
 ## v2.1.0 (2024-03-15)

@@ -1,3 +1,6 @@
+## Unreleased
+[no unreleased changes yet]
+
 ## v2.2.1 (2024-04-01)
 [no unreleased changes yet]
 

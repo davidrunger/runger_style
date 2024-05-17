@@ -1,4 +1,4 @@
-## Unreleased
+## v2.3.0 (2024-05-17)
 - Disable `Layout/HeredocIndentation` temporarily due to prism/rubocop bugs
 
 ## v2.2.1 (2024-04-01)

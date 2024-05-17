@@ -35,6 +35,8 @@ Layout/FirstArrayElementIndentation:
   EnforcedStyle: consistent
 Layout/FirstMethodArgumentLineBreak:
   Enabled: false
+Layout/HeredocIndentation:
+  Enabled: false # disabled (hopefully temporarily) due to prism/rubocop bug with this cop
 Layout/LineEndStringConcatenationIndentation:
   Exclude:
     - bin/*

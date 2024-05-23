@@ -1,6 +1,9 @@
 require:
   - rubocop-rails
 
+AllCops:
+  ActiveSupportExtensionsEnabled: true
+
 Rails:
   Exclude:
     - bin/* # `bin/` files don't have access to Rails add-on methods like `#present?`

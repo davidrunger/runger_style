@@ -1,4 +1,4 @@
-## Unreleased
+## v2.4.0 (2024-05-23)
 - Set `ActiveSupportExtensionsEnabled` to true in `rails.yml`
 
 ## v2.3.0 (2024-05-17)

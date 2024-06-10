@@ -1,4 +1,4 @@
-## Unreleased
+## v2.5.0 (2024-06-10)
 - Reenable `Layout/HeredocIndentation` cop
 
 ## v2.4.0 (2024-05-23)

@@ -1,5 +1,5 @@
 ## Unreleased
-[no unreleased changes yet]
+- Reenable `Layout/HeredocIndentation` cop
 
 ## v2.4.0 (2024-05-23)
 - Set `ActiveSupportExtensionsEnabled` to true in `rails.yml`

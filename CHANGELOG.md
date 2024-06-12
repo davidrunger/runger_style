@@ -1,5 +1,5 @@
 ## Unreleased
-[no unreleased changes yet]
+- Move RSpecRails cop to separate YAML file
 
 ## v2.5.0 (2024-06-10)
 - Reenable `Layout/HeredocIndentation` cop

@@ -39,5 +39,3 @@ RSpec/MessageSpies:
   Enabled: false
 RSpec/NestedGroups:
   Enabled: false
-RSpecRails/HttpStatus:
-  Enabled: false

@@ -49,6 +49,7 @@ inherit_gem:
     - rulesets/performance.yml # gem 'rubocop-performance'
     - rulesets/rails.yml # gem 'rubocop-rails'
     - rulesets/rake.yml # gem 'rubocop-rake'
+    - rulesets/rspec_rails.yml # gem 'rubocop-rspec_rails'
     - rulesets/rspec.yml # gem 'rubocop-rspec'
 ```
 

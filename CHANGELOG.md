@@ -1,3 +1,6 @@
+## Unreleased
+[no unreleased changes yet]
+
 ## v2.6.0 (2024-06-12)
 - Move RSpecRails cop to separate YAML file
 

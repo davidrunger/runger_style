@@ -1,4 +1,4 @@
-## Unreleased
+## v2.6.0 (2024-06-12)
 - Move RSpecRails cop to separate YAML file
 
 ## v2.5.0 (2024-06-10)

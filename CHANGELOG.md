@@ -1,5 +1,5 @@
 ## Unreleased
-[no unreleased changes yet]
+- Enforce indented style for `Layout/MultilineOperationIndentation`
 
 ## v2.7.0 (2024-06-15)
 - Rename primary branch from `master` to `main`

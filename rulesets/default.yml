@@ -46,6 +46,8 @@ Layout/LineLength:
   Max: 100
 Layout/MultilineMethodCallIndentation:
   EnforcedStyle: indented
+Layout/MultilineOperationIndentation:
+  EnforcedStyle: indented
 Layout/RedundantLineBreak:
   Enabled: false
 Layout/SingleLineBlockChain:

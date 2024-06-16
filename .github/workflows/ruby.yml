@@ -1,4 +1,4 @@
-name: Run Rubocop
+name: Run RuboCop
 
 on:
   pull_request:
@@ -18,7 +18,7 @@ jobs:
       run: |
         gem install bundler -v 2.1.4
         bundle install --jobs 4 --retry 3
-    - name: Run Rubocop
+    - name: Run RuboCop
       run: bin/rubocop --format clang
     - name: Ensure alpha version
       run: grep alpha $(find . -type f -name version.rb)

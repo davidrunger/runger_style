@@ -1,4 +1,4 @@
-## Unreleased
+## v2.8.0 (2024-06-16)
 - Enforce indented style for `Layout/MultilineOperationIndentation`
 
 ## v2.7.0 (2024-06-15)

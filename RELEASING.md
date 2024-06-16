@@ -1,6 +1,6 @@
 # Releasing
 
-1. check out the `master` branch
+1. check out the `main` branch
 2. update `CHANGELOG.md`
 3. update the version number in `version.rb`
 4. `bundle install` (which will update `Gemfile.lock`)

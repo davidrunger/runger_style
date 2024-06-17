@@ -5,4 +5,5 @@ inherit_from:
   - rulesets/performance.yml
   - rulesets/rails.yml
   - rulesets/rake.yml
+  - rulesets/rspec_rails.yml
   - rulesets/rspec.yml

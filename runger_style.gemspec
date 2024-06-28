@@ -25,7 +25,8 @@ Gem::Specification.new do |spec|
     end
   spec.require_paths = ['lib']
 
-  spec.required_ruby_version = ">= #{File.read('.ruby-version').rstrip}"
+  required_ruby_version = File.read('.ruby-version').rstrip.sub(/\A(\d+\.\d+)\.\d+\z/, '.0')
+  spec.required_ruby_version = ">= #{required_ruby_version}"
 
   spec.add_runtime_dependency('prism', '>= 0.24.0')
   spec.add_runtime_dependency('rubocop', '>= 1.38.0', '< 2')

@@ -1,5 +1,5 @@
 ## Unreleased
-[no unreleased changes yet]
+- Enforce only major and minor parts of required Ruby version (loosening the required Ruby version from 3.3.3 to 3.3.0)
 
 ## v2.8.0 (2024-06-16)
 - Enforce indented style for `Layout/MultilineOperationIndentation`

@@ -33,8 +33,6 @@ Layout/FirstArgumentIndentation:
   Enabled: false # this rule doesn't play nicely with the way that I like to use `memoize`
 Layout/FirstArrayElementIndentation:
   EnforcedStyle: consistent
-Layout/FirstMethodArgumentLineBreak:
-  Enabled: false
 Layout/LineEndStringConcatenationIndentation:
   Exclude:
     - bin/*

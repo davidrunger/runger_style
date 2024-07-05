@@ -1,3 +1,6 @@
+## Unreleased
+[no unreleased changes yet]
+
 ## v2.11.0 (2024-07-05)
 - Set `AllowMultilineFinalElement: true` for `Layout/FirstMethodArgumentLineBreak`
 

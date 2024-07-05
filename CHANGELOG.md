@@ -1,3 +1,6 @@
+## Unreleased
+[no unreleased changes yet]
+
 ## v2.10.0 (2024-07-05)
 - Enable `Layout/FirstMethodArgumentLineBreak`
 

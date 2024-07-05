@@ -67,7 +67,6 @@ in the `Gemfile` of your application or library.
 
 group :development, :test do
   # include whichever of these gems are required, based on which ruleset(s) you use
-  gem 'rubocop', require: false
   gem 'rubocop-capybara', require: false
   gem 'rubocop-factory_bot', require: false
   gem 'rubocop-performance', require: false

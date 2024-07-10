@@ -28,6 +28,6 @@ Gem::Specification.new do |spec|
   required_ruby_version = File.read('.ruby-version').rstrip.sub(/\A(\d+\.\d+)\.\d+\z/, '\1.0')
   spec.required_ruby_version = ">= #{required_ruby_version}"
 
-  spec.add_runtime_dependency('prism', '>= 0.24.0')
-  spec.add_runtime_dependency('rubocop', '>= 1.38.0', '< 2')
+  spec.add_dependency('prism', '>= 0.24.0')
+  spec.add_dependency('rubocop', '>= 1.38.0', '< 2')
 end

@@ -1,5 +1,5 @@
 ## Unreleased
-[no unreleased changes yet]
+- Disable `Style/FormatString` cop
 
 ## v2.11.0 (2024-07-05)
 - Set `AllowMultilineFinalElement: true` for `Layout/FirstMethodArgumentLineBreak`

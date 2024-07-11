@@ -1,4 +1,4 @@
-## Unreleased
+## v2.12.0 (2024-07-11)
 - Disable `Style/FormatString` cop
 
 ## v2.11.0 (2024-07-05)

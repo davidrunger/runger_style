@@ -117,6 +117,8 @@ Style/DocumentationMethod:
   Enabled: false
 Style/EmptyCaseCondition:
   Enabled: false
+Style/FormatString:
+  Enabled: false
 Style/FrozenStringLiteralComment:
   Enabled: true
 Style/GlobalStdStream:

@@ -1,5 +1,5 @@
 ## Unreleased
-[no unreleased changes yet]
+- Ignore `Layout/LineLength` for RSpec example descriptions
 
 ## v2.12.0 (2024-07-11)
 - Disable `Style/FormatString` cop

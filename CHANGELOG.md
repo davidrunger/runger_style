@@ -1,3 +1,6 @@
+## Unreleased
+[no unreleased changes yet]
+
 ## v2.13.0 (2024-07-23)
 - Ignore `Layout/LineLength` for RSpec example descriptions
 

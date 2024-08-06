@@ -12,6 +12,8 @@ Layout:
     - db/schema.rb
 Layout/ArgumentAlignment:
   EnforcedStyle: with_fixed_indentation
+Layout/BlockAlignment:
+  EnforcedStyleAlignWith: start_of_block
 Layout/ClassStructure:
   ExpectedOrder:
     - module_inclusion

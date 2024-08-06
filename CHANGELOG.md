@@ -1,4 +1,4 @@
-## Unreleased
+## v2.14.0 (2024-08-05)
 - Allow `127.0.0.1` as an IP address for `Style/IpAddresses`
 
 ## v2.13.0 (2024-07-23)

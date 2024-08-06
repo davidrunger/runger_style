@@ -14,13 +14,13 @@ Layout/ArgumentAlignment:
   EnforcedStyle: with_fixed_indentation
 Layout/ClassStructure:
   ExpectedOrder:
-      - module_inclusion
-      - constants
-      - public_class_methods
-      - initializer
-      - public_methods
-      - protected_methods
-      - private_methods
+    - module_inclusion
+    - constants
+    - public_class_methods
+    - initializer
+    - public_methods
+    - protected_methods
+    - private_methods
 Layout/ConditionPosition:
   Enabled: false
 Layout/DotPosition:
@@ -137,6 +137,11 @@ Style/ImplicitRuntimeError:
   Enabled: false
 Style/InlineComment:
   Enabled: false
+Style/IpAddresses:
+  AllowedAddresses:
+    - "::"
+    - "::1"
+    - "127.0.0.1"
 Style/Lambda:
   Enabled: false
 Style/MethodCallWithArgsParentheses:

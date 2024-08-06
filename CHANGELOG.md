@@ -1,3 +1,6 @@
+## Unreleased
+[no unreleased changes yet]
+
 ## v2.15.0 (2024-08-05)
 - Add `EnforcedStyleAlignWith: start_of_block` for `Layout/BlockAlignment` cop
 

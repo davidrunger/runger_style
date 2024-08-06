@@ -1,5 +1,5 @@
 ## Unreleased
-[no unreleased changes yet]
+- Add `EnforcedStyleAlignWith: start_of_block` for `Layout/BlockAlignment` cop
 
 ## v2.14.0 (2024-08-05)
 - Allow `127.0.0.1` as an IP address for `Style/IpAddresses`

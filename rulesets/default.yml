@@ -45,8 +45,8 @@ Layout/LineLength:
     # Ignore line length if the line is a comment without any spaces; it's probably not something we
     # can fix (e.g. a long file path):
     - !ruby/regexp /^ *#? [\S]+$/
-    # Ignore RSpec example descriptions:
-    - !ruby/regexp /^ *it ['"].*['"].*do$/
+    # Ignore RSpec description strings:
+    - !ruby/regexp /^ *(context|describe|it) ['"].*['"].* do$/
   Max: 100
 Layout/MultilineMethodCallIndentation:
   EnforcedStyle: indented

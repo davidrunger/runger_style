@@ -1,3 +1,6 @@
+## Unreleased
+[no unreleased changes yet]
+
 ## v2.16.0 (2024-08-08)
 - Ignore RSpec `context` and `describe` lines for `Layout/LineLength` (as we are already doing for `it`)
 

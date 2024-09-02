@@ -33,7 +33,7 @@ GEM
       reline (>= 0.4.2)
     json (2.7.2)
     language_server-protocol (3.17.0.3)
-    logger (1.6.0)
+    logger (1.6.1)
     memo_wise (1.9.0)
     minitest (5.25.1)
     parallel (1.26.3)

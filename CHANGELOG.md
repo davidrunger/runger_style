@@ -1,3 +1,6 @@
+## Unreleased
+[no unreleased changes yet]
+
 ## v2.17.0 (2024-09-03)
 - Ignore long annotate comments about indexes (re: `Layout/LineLength`)
 

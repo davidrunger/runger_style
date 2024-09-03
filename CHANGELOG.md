@@ -1,5 +1,5 @@
 ## Unreleased
-[no unreleased changes yet]
+- Ignore long annotate comments about indexes (re: `Layout/LineLength`)
 
 ## v2.16.0 (2024-08-08)
 - Ignore RSpec `context` and `describe` lines for `Layout/LineLength` (as we are already doing for `it`)

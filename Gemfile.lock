@@ -40,7 +40,7 @@ GEM
     parser (3.3.5.0)
       ast (~> 2.4.1)
       racc
-    prism (1.0.0)
+    prism (1.1.0)
     psych (5.1.2)
       stringio
     racc (1.8.1)

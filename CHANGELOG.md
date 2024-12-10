@@ -1,5 +1,5 @@
 ## Unreleased
-[no unreleased changes yet]
+- Remove upper bounds on versions for all dependencies.
 
 ## v2.17.0 (2024-09-03)
 - Ignore long annotate comments about indexes (re: `Layout/LineLength`)

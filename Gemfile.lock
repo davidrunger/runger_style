@@ -3,7 +3,7 @@ PATH
   specs:
     runger_style (2.17.1.alpha)
       prism (>= 0.24.0)
-      rubocop (>= 1.38.0, < 2)
+      rubocop (>= 1.38.0)
 
 GEM
   remote: https://rubygems.org/

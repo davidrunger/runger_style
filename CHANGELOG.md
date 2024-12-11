@@ -1,4 +1,4 @@
-## Unreleased
+## v2.19.0 (2024-12-10)
 - Disable `Style/SafeNavigationChainLength` cop.
 
 ## v2.18.0 (2024-12-10)

@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    runger_style (2.19.1.alpha)
+    runger_style (3.0.0)
       prism (>= 0.24.0)
       rubocop (>= 1.68.0)
 

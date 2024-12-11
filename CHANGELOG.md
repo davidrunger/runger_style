@@ -1,4 +1,4 @@
-## Unreleased
+## v3.0.0 (2024-12-11)
 - Increase minimum required `rubocop` version to 1.68.0.
 
 ## v2.19.0 (2024-12-10)

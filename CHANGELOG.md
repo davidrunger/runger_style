@@ -1,5 +1,5 @@
 ## Unreleased
-[no unreleased changes yet]
+- Disable `Style/SafeNavigationChainLength` cop.
 
 ## v2.18.0 (2024-12-10)
 - Remove upper bounds on versions for all dependencies.

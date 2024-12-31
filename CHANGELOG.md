@@ -1,5 +1,5 @@
 ## Unreleased
-[no unreleased changes yet]
+- Increase TargetRubyVersion from 3.3 to 3.4
 
 ## v4.0.0 (2024-12-31)
 [no unreleased changes yet]

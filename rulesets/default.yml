@@ -1,7 +1,7 @@
 AllCops:
   EnabledByDefault: true
   ParserEngine: parser_prism
-  TargetRubyVersion: 3.3
+  TargetRubyVersion: 3.4
   UseCache: true
 Bundler/GemComment:
   Enabled: false

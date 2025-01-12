@@ -1,4 +1,4 @@
-## Unreleased
+## v4.1.0 (2025-01-11)
 - Enable `Style/BlockDelimiters` (except for `expect` method)
 
 ## v4.0.1 (2024-12-31)

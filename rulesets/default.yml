@@ -102,7 +102,9 @@ Style/ArgumentsForwarding:
 Style/ArrayFirstLast:
   Enabled: false
 Style/BlockDelimiters:
-  Enabled: false
+  Enabled: true
+  AllowedMethods:
+    - expect
 Style/ClassAndModuleChildren:
   EnforcedStyle: compact
 Style/ClassMethodsDefinitions:

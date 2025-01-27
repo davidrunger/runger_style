@@ -1,4 +1,4 @@
-## Unreleased
+## v4.2.2 (2025-01-27)
 - Fix `RungerStyle/MultilineMethodArgumentsLineBreaks` false positives.
 
 ## v4.2.1 (2025-01-27)

@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module RungerStyle
+module RungerStyle # rubocop:disable Style/ClassAndModuleChildren
   class MultilineMethodArgumentsLineBreaks < ::RuboCop::Cop::Base
     extend RuboCop::Cop::AutoCorrector
     include RuboCop::Cop::RangeHelp

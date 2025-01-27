@@ -8,8 +8,9 @@ module RungerStyle # rubocop:disable Style/ClassAndModuleChildren
     MSG = 'Each argument in a multi-line method call must start on a separate line.'
 
     def on_send(node)
-      return unless node.multiline?
       return if node.arguments.size <= 1
+      return unless node.parenthesized?
+      return unless multiline_parentheses?(node)
 
       node.arguments.each_cons(2) do |arg1, arg2|
         next unless same_line?(arg1, arg2)
@@ -25,6 +26,10 @@ module RungerStyle # rubocop:disable Style/ClassAndModuleChildren
     end
 
     private
+
+    def multiline_parentheses?(node)
+      node.loc.begin.line != node.loc.end.line
+    end
 
     def same_line?(arg1, arg2)
       arg1.source_range.last_line == arg2.source_range.first_line

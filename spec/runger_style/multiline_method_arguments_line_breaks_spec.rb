@@ -179,4 +179,13 @@ RSpec.describe RungerStyle::MultilineMethodArgumentsLineBreaks do
       RUBY
     end
   end
+
+  context 'when the method call is part of a multi-line chain and arguments are on a single line' do
+    it 'does not register an offense' do
+      expect_no_offenses(<<~RUBY)
+        foo.
+          bar(a, b)
+      RUBY
+    end
+  end
 end

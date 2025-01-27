@@ -1,5 +1,5 @@
 ## Unreleased
-[no unreleased changes yet]
+- Explicitly declare `module RungerStyle` in `RungerStyle/MultilineMethodArgumentsLineBreaks` definition.
 
 ## v4.2.0 (2025-01-27)
 - Add `RungerStyle/MultilineMethodArgumentsLineBreaks` cop.

@@ -1,4 +1,4 @@
-name: Run RuboCop
+name: Run RuboCop and RSpec
 
 on:
   pull_request:

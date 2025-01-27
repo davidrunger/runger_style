@@ -1,4 +1,4 @@
-name: Run RuboCop
+name: Run RuboCop and RSpec
 
 on:
   pull_request:
@@ -23,6 +23,8 @@ jobs:
         bundle install --jobs 4 --retry 3
     - name: Run RuboCop
       run: bin/rubocop --format clang
+    - name: Run RSpec tests
+      run: bin/rspec --format progress
     - name: Ensure alpha version
       run: grep alpha $(find . -type f -name version.rb)
     - name: Ensure no git diff

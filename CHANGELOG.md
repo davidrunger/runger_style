@@ -1,4 +1,4 @@
-## Unreleased
+## v4.2.0 (2025-01-27)
 - Add `RungerStyle/MultilineMethodArgumentsLineBreaks` cop.
 
 ## v4.1.0 (2025-01-11)

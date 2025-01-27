@@ -19,6 +19,7 @@ group :development do
 end
 
 group :test do
+  gem 'rspec'
   gem 'rubocop-capybara'
   gem 'rubocop-factory_bot'
   gem 'rubocop-rails'

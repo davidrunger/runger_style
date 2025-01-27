@@ -1,5 +1,5 @@
 ## Unreleased
-[no unreleased changes yet]
+- Add `RungerStyle/MultilineMethodArgumentsLineBreaks` cop.
 
 ## v4.1.0 (2025-01-11)
 - Enable `Style/BlockDelimiters` (except for `expect` method)

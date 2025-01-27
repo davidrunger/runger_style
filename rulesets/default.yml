@@ -1,3 +1,6 @@
+require:
+  - ../lib/runger_style/cops/require_all_custom_cops.rb
+
 AllCops:
   EnabledByDefault: true
   ParserEngine: parser_prism

@@ -1,5 +1,5 @@
 ## Unreleased
-[no unreleased changes yet]
+- Specify `EnforcedShorthandSyntax: always` for `Style/HashSyntax`.
 
 ## v4.2.2 (2025-01-27)
 - Fix `RungerStyle/MultilineMethodArgumentsLineBreaks` false positives.

@@ -1,3 +1,6 @@
+## Unreleased
+[no unreleased changes yet]
+
 ## v4.3.0 (2025-01-31)
 - Specify `EnforcedShorthandSyntax: always` for `Style/HashSyntax`.
 

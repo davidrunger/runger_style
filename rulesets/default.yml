@@ -140,6 +140,9 @@ Style/GuardClause:
   Enabled: false
 Style/HashLikeCase:
   Enabled: false
+Style/HashSyntax:
+  Enabled: true
+  EnforcedShorthandSyntax: always
 Style/IfUnlessModifier:
   Enabled: false
 Style/ImplicitRuntimeError:

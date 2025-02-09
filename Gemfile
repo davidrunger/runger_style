@@ -9,6 +9,7 @@ gemspec
 group :development, :test do
   gem 'bundler'
   gem 'irb'
+  gem 'pry-byebug', github: 'davidrunger/pry-byebug'
   gem 'rake'
   gem 'rubocop'
   gem 'rubocop-performance'

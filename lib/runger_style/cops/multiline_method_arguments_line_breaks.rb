@@ -7,28 +7,42 @@ module RungerStyle # rubocop:disable Style/ClassAndModuleChildren
 
     MSG = 'Each argument in a multi-line method call must start on a separate line.'
 
+    # rubocop:disable Metrics/PerceivedComplexity
+    # rubocop:disable Metrics/CyclomaticComplexity
     def on_send(node)
-      return if node.arguments.size <= 1
-      return unless node.parenthesized?
-      return unless multiline_parentheses?(node)
+      if node.arguments? && multiline_method_call?(node)
+        # When a method call uses keyword arguments without braces,
+        # the parser produces a single hash node. In that case, inspect its pairs.
+        arguments =
+          if node.arguments.one? &&
+              node.arguments.first.hash_type? &&
+              !node.arguments.first.braces?
+            node.arguments.first.pairs
+          else
+            node.arguments
+          end
 
-      node.arguments.each_cons(2) do |arg1, arg2|
-        next unless same_line?(arg1, arg2)
+        arguments.each_cons(2) do |arg1, arg2|
+          if same_line?(arg1, arg2)
+            separator = separator_range(arg1, arg2)
 
-        separator = separator_range(arg1, arg2)
-
-        add_offense(separator, message: MSG) do |corrector|
-          base_indent = base_indentation(arg1)
-          replacement = ",\n#{base_indent}"
-          corrector.replace(separator, replacement)
+            add_offense(separator, message: MSG) do |corrector|
+              base_indent = base_indentation(arg1)
+              replacement = ",\n#{base_indent}"
+              corrector.replace(separator, replacement)
+            end
+          end
         end
       end
     end
+    # rubocop:enable Metrics/CyclomaticComplexity
+    # rubocop:enable Metrics/PerceivedComplexity
 
     private
 
-    def multiline_parentheses?(node)
-      node.loc.begin.line != node.loc.end.line
+    def multiline_method_call?(node)
+      # Compare the line of the method name (selector) to the end line of the last argument.
+      node.loc.selector.line != node.arguments.last.loc.last_line
     end
 
     def same_line?(arg1, arg2)
@@ -40,9 +54,7 @@ module RungerStyle # rubocop:disable Style/ClassAndModuleChildren
     end
 
     def separator_range(arg1, arg2)
-      end_pos = arg1.source_range.end.end_pos
-      begin_pos = arg2.source_range.begin.begin_pos
-      range_between(end_pos, begin_pos)
+      range_between(arg1.source_range.end_pos, arg2.source_range.begin_pos)
     end
   end
 end

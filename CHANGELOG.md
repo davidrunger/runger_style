@@ -1,5 +1,6 @@
 ## Unreleased
-[no unreleased changes yet]
+- Fix false negative for `RungerStyle/MultilineMethodArgumentsLineBreaks` with keyword arguments.
+- Disable `Style/Next`.
 
 ## v4.3.0 (2025-01-31)
 - Specify `EnforcedShorthandSyntax: always` for `Style/HashSyntax`.

@@ -218,6 +218,8 @@ Style/MultilineMethodSignature:
   Enabled: false
 Style/NegatedIf:
   Enabled: false
+Style/Next:
+  Enabled: false
 Style/NumericPredicate:
   Enabled: false
 Style/ParenthesesAroundCondition:

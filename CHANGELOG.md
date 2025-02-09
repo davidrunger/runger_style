@@ -1,4 +1,4 @@
-## Unreleased
+## v4.4.0 (2025-02-09)
 - Fix false negative for `RungerStyle/MultilineMethodArgumentsLineBreaks` with keyword arguments.
 - Disable `Style/Next`.
 

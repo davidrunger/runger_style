@@ -1,5 +1,5 @@
 ## Unreleased
-[no unreleased changes yet]
+- Remove `RSpec/DescribeClass` custom config.
 
 ## v4.4.0 (2025-02-09)
 - Fix false negative for `RungerStyle/MultilineMethodArgumentsLineBreaks` with keyword arguments.

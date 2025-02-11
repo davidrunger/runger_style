@@ -2,8 +2,8 @@
 
 module RungerStyle # rubocop:disable Style/ClassAndModuleChildren
   class MultilineMethodArgumentsLineBreaks < ::RuboCop::Cop::Base
-    extend RuboCop::Cop::AutoCorrector
-    include RuboCop::Cop::RangeHelp
+    extend ::RuboCop::Cop::AutoCorrector
+    include ::RuboCop::Cop::RangeHelp
 
     MSG = 'Each argument in a multi-line method call must start on a separate line.'
 

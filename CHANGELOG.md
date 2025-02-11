@@ -1,5 +1,5 @@
 ## Unreleased
-[no unreleased changes yet]
+- Add custom `RungerStyle/MultilineHashValueIndentation` cop.
 
 ## v4.4.1 (2025-02-10)
 - Remove `RSpec/DescribeClass` custom config.

@@ -1,5 +1,6 @@
 ## Unreleased
 - Add custom `RungerStyle/MultilineHashValueIndentation` cop.
+- Add custom `RungerStyle/FirstArgumentIndentation` cop.
 
 ## v4.4.1 (2025-02-10)
 - Remove `RSpec/DescribeClass` custom config.

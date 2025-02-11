@@ -13,8 +13,6 @@ Bundler/GemVersion:
 Layout:
   Exclude:
     - db/schema.rb
-Layout/ArgumentAlignment:
-  EnforcedStyle: with_fixed_indentation
 Layout/BlockAlignment:
   EnforcedStyleAlignWith: start_of_block
 Layout/ClassStructure:
@@ -35,7 +33,7 @@ Layout/EmptyLineAfterMultilineCondition:
 Layout/EmptyLineBetweenDefs:
   AllowAdjacentOneLineDefs: true
 Layout/FirstArgumentIndentation:
-  Enabled: false # this rule doesn't play nicely with the way that I like to use `memoize`
+  Enabled: false # Instead, we use RungerStyle/FirstArgumentIndentation.
 Layout/FirstArrayElementIndentation:
   EnforcedStyle: consistent
 Layout/FirstMethodArgumentLineBreak:
@@ -53,6 +51,15 @@ Layout/LineLength:
     # Ignore RSpec description strings:
     - !ruby/regexp /^ *(context|describe|it) ['"].*['"].* do$/
   Max: 100
+Layout/MultilineAssignmentLayout:
+  SupportedTypes:
+    - block
+    - case
+    - class
+    - if
+    - kwbegin
+    - module
+    - send # This (method calls) is not in the default list.
 Layout/MultilineMethodCallIndentation:
   EnforcedStyle: indented
 Layout/MultilineOperationIndentation:
@@ -97,6 +104,13 @@ Naming/RescuedExceptionsVariableName:
   Enabled: false
 Naming/VariableNumber:
   Enabled: false
+RungerStyle/FirstArgumentIndentation:
+  EnforcedStyle: consistent_relative_to_receiver
+  MemoizingMethods:
+    - memo_wise
+    - memoize
+  SupportedStyles:
+    - consistent_relative_to_receiver
 Style:
   Exclude:
     - db/schema.rb

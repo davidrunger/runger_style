@@ -22,11 +22,12 @@ module RungerStyle # rubocop:disable Style/ClassAndModuleChildren
             # Get the entire line where the value starts.
             line_range = buffer.line_range(value_node.source_range.line)
             # Create a range covering just the indentation of that line.
-            indentation_range = Parser::Source::Range.new(
-              buffer,
-              line_range.begin_pos,
-              value_node.source_range.begin_pos,
-            )
+            indentation_range =
+              Parser::Source::Range.new(
+                buffer,
+                line_range.begin_pos,
+                value_node.source_range.begin_pos,
+              )
             # Replace the existing indentation with the expected number of spaces.
             corrector.replace(indentation_range, ' ' * expected_value_column)
           end

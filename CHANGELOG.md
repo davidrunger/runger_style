@@ -1,3 +1,6 @@
+## Unreleased
+[no unreleased changes yet]
+
 ## v4.5.0 (2025-02-11)
 - Add custom `RungerStyle/MultilineHashValueIndentation` cop.
 - Add custom `RungerStyle/FirstArgumentIndentation` cop.

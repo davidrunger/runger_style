@@ -1,5 +1,5 @@
 ## Unreleased
-[no unreleased changes yet]
+- Fix `RungerStyle/MultilineHashValueIndentation` false positive on multiline keys.
 
 ## v5.0.0 (2025-02-11)
 - **BREAKING:** Rename `MemoizingMethods` config option for `RungerStyle/FirstArgumentIndentation` to `DecoratorMethods`.

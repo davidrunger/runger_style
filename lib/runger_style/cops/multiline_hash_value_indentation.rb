@@ -10,8 +10,9 @@ module RungerStyle # rubocop:disable Style/ClassAndModuleChildren
       key_node = node.key
       value_node = node.value
 
-      # Only check if the key and value appear on separate lines.
-      if key_node.source_range.line != value_node.source_range.line
+      # Only check if the value starts on a line after the key ends.
+      if key_node.loc.expression.last_line != value_node.source_range.line
+
         key_column = key_node.source_range.column
         expected_value_column = key_column + 2
         actual_value_column = value_node.source_range.column

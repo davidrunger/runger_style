@@ -97,5 +97,43 @@ RSpec.describe RungerStyle::MultilineHashValueIndentation do
         RUBY
       end
     end
+
+    context 'when the key is multiline but the value is single-line' do
+      it 'does not register an offense' do
+        expect_no_offenses(<<~RUBY)
+          SPEC_TO_RAILS_DEFAULT_MAP = {
+            %r{
+              actions|
+              workers
+            }x => 'app/\1/',
+          }.freeze
+        RUBY
+      end
+    end
+
+    context 'when the key is multiline and the value is on another line' do
+      it 'registers an offense and autocorrects it' do
+        expect_offense(<<~RUBY)
+          SPEC_TO_RAILS_DEFAULT_MAP = {
+            %r{
+              actions|
+              workers
+            }x =>
+            'the hash value',
+            ^^^^^^^^^^^^^^^^ RungerStyle/MultilineHashValueIndentation: Hash value should be indented by two spaces relative to its key.
+          }.freeze
+        RUBY
+
+        expect_correction(<<~RUBY)
+          SPEC_TO_RAILS_DEFAULT_MAP = {
+            %r{
+              actions|
+              workers
+            }x =>
+              'the hash value',
+          }.freeze
+        RUBY
+      end
+    end
   end
 end

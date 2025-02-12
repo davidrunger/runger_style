@@ -1,3 +1,6 @@
+## Unreleased
+[no unreleased changes yet]
+
 ## v5.0.1 (2025-02-11)
 - Fix `RungerStyle/MultilineHashValueIndentation` false positive on multiline keys.
 

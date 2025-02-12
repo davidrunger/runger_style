@@ -1,3 +1,6 @@
+## Unreleased
+[no unreleased changes yet]
+
 ## v5.0.0 (2025-02-11)
 - **BREAKING:** Rename `MemoizingMethods` config option for `RungerStyle/FirstArgumentIndentation` to `DecoratorMethods`.
 - Add `helper_method` to default `RungerStyle/FirstArgumentIndentation` `DecoratorMethods`.

@@ -10,7 +10,7 @@ RSpec.describe RungerStyle::FirstArgumentIndentation, :config do
     {
       'EnforcedStyle' => style,
       'SupportedStyles' => [style],
-      'MemoizingMethods' => %w[memoize],
+      'DecoratorMethods' => %w[helper_method memoize],
     }
   end
 
@@ -25,16 +25,17 @@ RSpec.describe RungerStyle::FirstArgumentIndentation, :config do
   context "when the Ruby version is #{ruby_version}" do
     let(:ruby_version) { ruby_version }
 
-    context 'when EnforcedStyle is consistent_relative_to_receiver' do
-      let(:style) { 'consistent_relative_to_receiver' }
+    context 'when EnforcedStyle is consistent' do
+      let(:style) { 'consistent' }
 
       context 'when IndentationWidth:Width is 2' do
         let(:indentation_width) { 2 }
 
-        context 'when memoizing a method listed in MemoizingMethods' do
-          it 'accepts the method definition being aligned with the memoize call' do
+        context 'when "decorating" with method(s) listed in DecoratorMethods' do
+          it 'accepts the method definition being aligned with the "decorator" call' do
             expect_no_offenses(<<~'RUBY')
               class SomeClass
+                helper_method \
                 memoize \
                 def expensive_method
                   do_something_expensive
@@ -44,13 +45,13 @@ RSpec.describe RungerStyle::FirstArgumentIndentation, :config do
           end
         end
 
-        context 'when "decorating" with a method not listed in MemoizingMethods' do
+        context 'when "decorating" with a method not listed in DecoratorMethods' do
           it 'complains about and indents the method definition' do
             expect_offense(<<~'RUBY')
               class SomeClass
                 memo_wise \
                 def expensive_method
-                ^^^^^^^^^^^^^^^^^^^^ Indent the first argument one step more than `memo_wise \`.
+                ^^^^^^^^^^^^^^^^^^^^ Indent the first argument one step more than the start of the previous line.
                   do_something_expensive
                 end
               end

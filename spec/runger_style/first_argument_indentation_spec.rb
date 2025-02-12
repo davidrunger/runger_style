@@ -10,6 +10,7 @@ RSpec.describe RungerStyle::FirstArgumentIndentation, :config do
     {
       'EnforcedStyle' => style,
       'SupportedStyles' => [style],
+      'MemoizingMethods' => %w[memoize],
     }
   end
 
@@ -31,8 +32,6 @@ RSpec.describe RungerStyle::FirstArgumentIndentation, :config do
         let(:indentation_width) { 2 }
 
         context 'when memoizing a method listed in MemoizingMethods' do
-          let(:cop_config) { super().merge({ 'MemoizingMethods' => %w[memoize] }) }
-
           it 'accepts the method definition being aligned with the memoize call' do
             expect_no_offenses(<<~'RUBY')
               class SomeClass
@@ -46,8 +45,6 @@ RSpec.describe RungerStyle::FirstArgumentIndentation, :config do
         end
 
         context 'when "decorating" with a method not listed in MemoizingMethods' do
-          let(:cop_config) { super().merge({ 'MemoizingMethods' => %w[memoize] }) }
-
           it 'complains about and indents the method definition' do
             expect_offense(<<~'RUBY')
               class SomeClass

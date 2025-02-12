@@ -7,3 +7,7 @@ inherit_from:
   - rulesets/rake.yml
   - rulesets/rspec_rails.yml
   - rulesets/rspec.yml
+
+# Load the Rails cops to check that they work, but disable them because this isn't a Rails project.
+Rails:
+  Enabled: false

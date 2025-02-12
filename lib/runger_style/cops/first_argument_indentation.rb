@@ -15,7 +15,7 @@ module RungerStyle # rubocop:disable Style/ClassAndModuleChildren
     end
 
     def memoizing_method_names
-      @memoizing_method_names ||= cop_config['MemoizingMethods'].map(&:to_sym)
+      @memoizing_method_names ||= cop_config['DecoratorMethods'].map(&:to_sym)
     end
   end
 end

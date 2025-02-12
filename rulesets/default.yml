@@ -13,6 +13,8 @@ Bundler/GemVersion:
 Layout:
   Exclude:
     - db/schema.rb
+Layout/ArgumentAlignment:
+  Enabled: false # Instead, we use RungerStyle/ArgumentAlignment.
 Layout/BlockAlignment:
   EnforcedStyleAlignWith: start_of_block
 Layout/ClassStructure:
@@ -36,6 +38,8 @@ Layout/FirstArgumentIndentation:
   Enabled: false # Instead, we use RungerStyle/FirstArgumentIndentation.
 Layout/FirstArrayElementIndentation:
   EnforcedStyle: consistent
+Layout/FirstHashElementIndentation:
+  EnforcedStyle: consistent
 Layout/FirstMethodArgumentLineBreak:
   AllowMultilineFinalElement: true
 Layout/LineEndStringConcatenationIndentation:
@@ -51,15 +55,6 @@ Layout/LineLength:
     # Ignore RSpec description strings:
     - !ruby/regexp /^ *(context|describe|it) ['"].*['"].* do$/
   Max: 100
-Layout/MultilineAssignmentLayout:
-  SupportedTypes:
-    - block
-    - case
-    - class
-    - if
-    - kwbegin
-    - module
-    - send # This (method calls) is not in the default list.
 Layout/MultilineMethodCallIndentation:
   EnforcedStyle: indented
 Layout/MultilineOperationIndentation:
@@ -104,13 +99,18 @@ Naming/RescuedExceptionsVariableName:
   Enabled: false
 Naming/VariableNumber:
   Enabled: false
+RungerStyle/ArgumentAlignment:
+  EnforcedStyle: with_first_argument
+  SupportedStyles:
+    - with_first_argument
 RungerStyle/FirstArgumentIndentation:
-  EnforcedStyle: consistent_relative_to_receiver
-  MemoizingMethods:
+  EnforcedStyle: consistent
+  DecoratorMethods:
+    - helper_method
     - memo_wise
     - memoize
   SupportedStyles:
-    - consistent_relative_to_receiver
+    - consistent
 Style:
   Exclude:
     - db/schema.rb

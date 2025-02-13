@@ -1,3 +1,6 @@
+## Unreleased
+[no unreleased changes yet]
+
 ## v5.1.0 (2025-02-12)
 - Monkeypatch `RuboCop::Cop::MultilineElementLineBreaks` so that arrays will be considered multiline if the array brackets are on separate lines (even if all elements are on a single line).
 

@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'runger_style'
+Dir['spec/support/**/*.rb'].each { |file| require_relative "../#{file}" }
 
 RSpec.configure do |config|
   config.expect_with(:rspec) do |expectations|

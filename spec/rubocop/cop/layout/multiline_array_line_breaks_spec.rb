@@ -4,8 +4,6 @@ require 'rubocop'
 require 'rubocop/rspec/support'
 
 RSpec.describe RuboCop::Cop::Layout::MultilineArrayLineBreaks, :config do
-  include RuboCop::RSpec::ExpectOffense
-
   context 'when on same line' do
     it 'does not add any offenses' do
       expect_no_offenses(<<~RUBY)

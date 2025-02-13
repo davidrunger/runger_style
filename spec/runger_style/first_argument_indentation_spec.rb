@@ -4,8 +4,6 @@ require 'rubocop'
 require 'rubocop/rspec/support'
 
 RSpec.describe RungerStyle::FirstArgumentIndentation, :config do
-  include RuboCop::RSpec::ExpectOffense
-
   let(:cop_config) do
     {
       'EnforcedStyle' => style,

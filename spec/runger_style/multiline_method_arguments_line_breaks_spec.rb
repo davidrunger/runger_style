@@ -3,9 +3,7 @@
 require 'rubocop'
 require 'rubocop/rspec/support'
 
-RSpec.describe RungerStyle::MultilineMethodArgumentsLineBreaks do
-  subject(:cop) { described_class.new }
-
+RSpec.describe RungerStyle::MultilineMethodArgumentsLineBreaks, :config do
   ruby_version =
     YAML.load_file(
       'rulesets/default.yml',
@@ -28,7 +26,7 @@ RSpec.describe RungerStyle::MultilineMethodArgumentsLineBreaks do
         expect_offense(<<~RUBY)
           foo(
             a, b,
-             ^^ RungerStyle/MultilineMethodArgumentsLineBreaks: Each argument in a multi-line method call must start on a separate line.
+             ^^ Each argument in a multi-line method call must start on a separate line.
           )
         RUBY
 
@@ -46,7 +44,7 @@ RSpec.describe RungerStyle::MultilineMethodArgumentsLineBreaks do
         expect_offense(<<~RUBY)
           foo(
             a:, b: 2,
-              ^^ RungerStyle/MultilineMethodArgumentsLineBreaks: Each argument in a multi-line method call must start on a separate line.
+              ^^ Each argument in a multi-line method call must start on a separate line.
           )
         RUBY
 
@@ -74,8 +72,8 @@ RSpec.describe RungerStyle::MultilineMethodArgumentsLineBreaks do
         expect_offense(<<~RUBY)
           foo(
             a, b, c,
-             ^^ RungerStyle/MultilineMethodArgumentsLineBreaks: Each argument in a multi-line method call must start on a separate line.
-                ^^ RungerStyle/MultilineMethodArgumentsLineBreaks: Each argument in a multi-line method call must start on a separate line.
+             ^^ Each argument in a multi-line method call must start on a separate line.
+                ^^ Each argument in a multi-line method call must start on a separate line.
           )
         RUBY
 
@@ -94,7 +92,7 @@ RSpec.describe RungerStyle::MultilineMethodArgumentsLineBreaks do
         expect_offense(<<~RUBY)
           foo(
             a, b,
-             ^^ RungerStyle/MultilineMethodArgumentsLineBreaks: Each argument in a multi-line method call must start on a separate line.
+             ^^ Each argument in a multi-line method call must start on a separate line.
             c,
           )
         RUBY
@@ -144,7 +142,7 @@ RSpec.describe RungerStyle::MultilineMethodArgumentsLineBreaks do
         expect_offense(<<~RUBY)
           foo(
             bar(a, b), c,
-                     ^^ RungerStyle/MultilineMethodArgumentsLineBreaks: Each argument in a multi-line method call must start on a separate line.
+                     ^^ Each argument in a multi-line method call must start on a separate line.
           )
         RUBY
 
@@ -162,7 +160,7 @@ RSpec.describe RungerStyle::MultilineMethodArgumentsLineBreaks do
         expect_offense(<<~RUBY)
           foo(
             a, b, # trailing comment
-             ^^ RungerStyle/MultilineMethodArgumentsLineBreaks: Each argument in a multi-line method call must start on a separate line.
+             ^^ Each argument in a multi-line method call must start on a separate line.
           )
         RUBY
 
@@ -180,7 +178,7 @@ RSpec.describe RungerStyle::MultilineMethodArgumentsLineBreaks do
         expect_offense(<<~RUBY)
           foo.bar(
             a, b,
-             ^^ RungerStyle/MultilineMethodArgumentsLineBreaks: Each argument in a multi-line method call must start on a separate line.
+             ^^ Each argument in a multi-line method call must start on a separate line.
           )
         RUBY
 
@@ -198,7 +196,7 @@ RSpec.describe RungerStyle::MultilineMethodArgumentsLineBreaks do
         expect_offense(<<~RUBY)
           foo(
             a, b,
-             ^^ RungerStyle/MultilineMethodArgumentsLineBreaks: Each argument in a multi-line method call must start on a separate line.
+             ^^ Each argument in a multi-line method call must start on a separate line.
           ) do |x|
             x.some_method
           end

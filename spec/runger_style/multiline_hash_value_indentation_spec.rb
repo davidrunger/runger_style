@@ -3,9 +3,7 @@
 require 'rubocop'
 require 'rubocop/rspec/support'
 
-RSpec.describe RungerStyle::MultilineHashValueIndentation do
-  subject(:cop) { described_class.new }
-
+RSpec.describe RungerStyle::MultilineHashValueIndentation, :config do
   ruby_version =
     YAML.load_file(
       'rulesets/default.yml',
@@ -40,7 +38,7 @@ RSpec.describe RungerStyle::MultilineHashValueIndentation do
           bootstrap(
             gantt_chart_data_by_github_run_id:
             @ci_step_results_presenter.gantt_chart_metadatas,
-            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ RungerStyle/MultilineHashValueIndentation: Hash value should be indented by two spaces relative to its key.
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Hash value should be indented by two spaces relative to its key.
           )
         RUBY
 
@@ -59,7 +57,7 @@ RSpec.describe RungerStyle::MultilineHashValueIndentation do
           bootstrap(
             gantt_chart_data_by_github_run_id:
                 @ci_step_results_presenter.gantt_chart_metadatas,
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ RungerStyle/MultilineHashValueIndentation: Hash value should be indented by two spaces relative to its key.
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Hash value should be indented by two spaces relative to its key.
           )
         RUBY
 
@@ -78,7 +76,7 @@ RSpec.describe RungerStyle::MultilineHashValueIndentation do
           bootstrap(
             gantt_chart_data_by_github_run_id:
             some_other_method(
-            ^^^^^^^^^^^^^^^^^^ RungerStyle/MultilineHashValueIndentation: Hash value should be indented by two spaces relative to its key.
+            ^^^^^^^^^^^^^^^^^^ Hash value should be indented by two spaces relative to its key.
               an_argument,
             )
           )
@@ -118,7 +116,7 @@ RSpec.describe RungerStyle::MultilineHashValueIndentation do
               workers
             }x =>
             'the hash value',
-            ^^^^^^^^^^^^^^^^ RungerStyle/MultilineHashValueIndentation: Hash value should be indented by two spaces relative to its key.
+            ^^^^^^^^^^^^^^^^ Hash value should be indented by two spaces relative to its key.
           }.freeze
         RUBY
 

@@ -4,8 +4,6 @@ require 'rubocop'
 require 'rubocop/rspec/support'
 
 RSpec.describe RungerStyle::MultilineHashValueIndentation do
-  include RuboCop::RSpec::ExpectOffense
-
   subject(:cop) { described_class.new }
 
   ruby_version =

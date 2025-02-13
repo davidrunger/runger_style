@@ -1,5 +1,5 @@
 ## Unreleased
-[no unreleased changes yet]
+- Monkeypatch `RuboCop::Cop::MultilineElementLineBreaks` so that arrays will be considered multiline if the array brackets are on separate lines (even if all elements are on a single line).
 
 ## v5.0.1 (2025-02-11)
 - Fix `RungerStyle/MultilineHashValueIndentation` false positive on multiline keys.

@@ -1,6 +1,7 @@
 ## Unreleased
 - Disable `Rails/Delegate` cop.
 - Register `rubocop-rails` as a plugin (rather than requiring it).
+- Register `rubocop-performance` and `rubocop-rake` as plugins (rather than requiring them).
 
 ## v5.2.0 (2025-02-16)
 - Disable `Metrics/CyclomaticComplexity` cop.

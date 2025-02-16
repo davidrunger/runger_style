@@ -56,7 +56,7 @@ Layout/LineLength:
     - !ruby/regexp /^ *(context|describe|it) ['"].*['"].* do$/
   Max: 100
 Layout/MultilineMethodCallIndentation:
-  EnforcedStyle: indented
+  EnforcedStyle: indented_relative_to_receiver
 Layout/MultilineOperationIndentation:
   EnforcedStyle: indented
 Layout/RedundantLineBreak:

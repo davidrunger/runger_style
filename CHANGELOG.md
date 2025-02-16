@@ -1,4 +1,4 @@
-## Unreleased
+## v5.3.0 (2025-02-16)
 - Disable `Rails/Delegate` cop.
 - Register `rubocop-rails` as a plugin (rather than requiring it).
 - Register `rubocop-performance` and `rubocop-rake` as plugins (rather than requiring them).

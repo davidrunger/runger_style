@@ -1,3 +1,6 @@
+## Unreleased
+[no unreleased changes yet]
+
 ## v5.2.0 (2025-02-16)
 - Disable `Metrics/CyclomaticComplexity` cop.
 - Monkeypatch `RuboCop::Cop::MultilineExpressionIndentation` to require (via `Layout/MultilineMethodCallIndentation`) the indentation of a chained multiline method call used as a method argument.

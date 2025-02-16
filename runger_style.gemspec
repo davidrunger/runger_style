@@ -34,5 +34,5 @@ Gem::Specification.new do |spec|
   spec.required_ruby_version = ">= #{required_ruby_version}"
 
   spec.add_dependency('prism', '>= 0.24.0')
-  spec.add_dependency('rubocop', '>= 1.68.0')
+  spec.add_dependency('rubocop', '>= 1.72.0')
 end

@@ -1,5 +1,6 @@
 ## Unreleased
 - Disable `Metrics/CyclomaticComplexity` cop.
+- Monkeypatch `RuboCop::Cop::MultilineExpressionIndentation` to require (via `Layout/MultilineMethodCallIndentation`) the indentation of a chained multiline method call used as a method argument.
 
 ## v5.1.0 (2025-02-12)
 - Monkeypatch `RuboCop::Cop::MultilineElementLineBreaks` so that arrays will be considered multiline if the array brackets are on separate lines (even if all elements are on a single line).

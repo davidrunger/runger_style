@@ -1,5 +1,5 @@
 ## Unreleased
-[no unreleased changes yet]
+- Disable `Rails/Delegate` cop.
 
 ## v5.2.0 (2025-02-16)
 - Disable `Metrics/CyclomaticComplexity` cop.

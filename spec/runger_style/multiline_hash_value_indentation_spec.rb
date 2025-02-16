@@ -1,8 +1,5 @@
 # frozen_string_literal: true
 
-require 'rubocop'
-require 'rubocop/rspec/support'
-
 RSpec.describe RungerStyle::MultilineHashValueIndentation, :config do
   ruby_version =
     YAML.load_file(

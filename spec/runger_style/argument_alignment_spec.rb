@@ -1,8 +1,5 @@
 # frozen_string_literal: true
 
-require 'rubocop'
-require 'rubocop/rspec/support'
-
 RSpec.describe RungerStyle::ArgumentAlignment, :config do
   let(:cop_config) do
     {

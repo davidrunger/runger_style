@@ -1,8 +1,5 @@
 # frozen_string_literal: true
 
-require 'rubocop'
-require 'rubocop/rspec/support'
-
 RSpec.describe RuboCop::Cop::Layout::MultilineArrayLineBreaks, :config do
   context 'when on same line' do
     it 'does not add any offenses' do

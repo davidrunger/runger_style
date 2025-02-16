@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 require 'runger_style'
+require 'rubocop'
+require 'rubocop/rspec/support'
 Dir['spec/support/**/*.rb'].each { |file| require_relative "../#{file}" }
 
 RSpec.configure do |config|

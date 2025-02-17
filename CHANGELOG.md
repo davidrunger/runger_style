@@ -1,5 +1,5 @@
 ## Unreleased
-[no unreleased changes yet]
+- Enforce `RungerStyle/ArgumentAlignment` on macro method calls with parentheses.
 
 ## v5.3.0 (2025-02-16)
 - Disable `Rails/Delegate` cop.

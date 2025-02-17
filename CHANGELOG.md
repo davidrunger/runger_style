@@ -1,5 +1,5 @@
 ## Unreleased
-[no unreleased changes yet]
+- Register `rubocop-rspec` as a plugin (rather than requiring it).
 
 ## v5.3.1 (2025-02-16)
 - Enforce `RungerStyle/ArgumentAlignment` on macro method calls with parentheses.

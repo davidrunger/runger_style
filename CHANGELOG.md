@@ -1,3 +1,6 @@
+## Unreleased
+[no unreleased changes yet]
+
 ## v5.4.0 (2025-02-17)
 - Register `rubocop-rspec` as a plugin (rather than requiring it).
 

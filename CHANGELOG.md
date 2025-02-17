@@ -1,4 +1,4 @@
-## Unreleased
+## v5.3.1 (2025-02-16)
 - Enforce `RungerStyle/ArgumentAlignment` on macro method calls with parentheses.
 
 ## v5.3.0 (2025-02-16)

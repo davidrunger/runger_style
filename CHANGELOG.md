@@ -1,3 +1,6 @@
+## Unreleased
+[no unreleased changes yet]
+
 ## v5.5.0 (2025-03-06)
 - Switch from `require` to `plugins` for `rubocop-factory_bot` ruleset (`rulesets/factory_bot.yml`).
 

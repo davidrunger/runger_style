@@ -1,5 +1,5 @@
 ## Unreleased
-[no unreleased changes yet]
+- Switch from `require` to `plugins` for `rubocop-factory_bot` ruleset (`rulesets/factory_bot.yml`).
 
 ## v5.4.0 (2025-02-17)
 - Register `rubocop-rspec` as a plugin (rather than requiring it).

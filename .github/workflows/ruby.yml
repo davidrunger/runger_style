@@ -22,7 +22,13 @@ jobs:
         gem install bundler -v 2.1.4
         bundle install --jobs 4 --retry 3
     - name: Run RuboCop
-      run: bin/rubocop --format clang
+      run: bin/rubocop --format clang --color 2> >(tee /tmp/rubocop_stderr >&2)
+    - name: Check that RuboCop didn't write anything to stderr
+      run: |
+        if [[ -s /tmp/rubocop_stderr ]] ; then
+          echo "Error: stderr was not empty" >&2
+          exit 1
+        fi
     - name: Run RSpec tests
       run: bin/rspec --format progress
     - name: Ensure alpha version

@@ -1,4 +1,6 @@
 ## Unreleased
+- Disable `Capybara/AmbiguousClick` and `Capybara/ClickLinkOrButtonStyle` and add `RungerStyle/ClickAmbiguously`, which does the opposite of `Capybara/AmbiguousClick`, i.e. it requires the use of `click_on` and forbids the use of `click_button` or `click_link`.
+
 ### Internal
 - Move default custom cops and monkeypatches to `default/` subdirectory. This will make it possible to also add cops/monkeypatches for other plugins in other subdirectories (e.g. capybara) that we don't want to require/include in the default config.
 

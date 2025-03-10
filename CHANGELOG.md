@@ -1,5 +1,6 @@
 ## Unreleased
 - Switch from `require` to `plugins` for `rubocop-rspec_rails` ruleset (`rulesets/rspec_rails.yml`).
+- Switch from `require` to `plugins` for `rubocop-capybara` ruleset (`rulesets/capybara.yml`).
 
 ## v5.5.0 (2025-03-06)
 - Switch from `require` to `plugins` for `rubocop-factory_bot` ruleset (`rulesets/factory_bot.yml`).

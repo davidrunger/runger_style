@@ -1,7 +1,16 @@
+require:
+  - ../lib/runger_style/cops/capybara/require_all_custom_cops.rb
+
 plugins:
   - rubocop-capybara
 
+Capybara/AmbiguousClick:
+  Enabled: false
+Capybara/ClickLinkOrButtonStyle:
+  Enabled: false
 Capybara/NegationMatcher:
   EnforcedStyle: not_to
 Capybara/SpecificMatcher:
   Enabled: false
+RungerStyle/ClickAmbiguously:
+  Enabled: true

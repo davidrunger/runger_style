@@ -1,5 +1,5 @@
 require:
-  - ../lib/runger_style/cops/require_all_custom_cops.rb
+  - ../lib/runger_style/cops/default/require_all_custom_cops.rb
 
 AllCops:
   EnabledByDefault: true

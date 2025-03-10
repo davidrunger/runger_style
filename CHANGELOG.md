@@ -1,5 +1,6 @@
 ## Unreleased
-[no unreleased changes yet]
+### Internal
+- Move default custom cops and monkeypatches to `default/` subdirectory. This will make it possible to also add cops/monkeypatches for other plugins in other subdirectories (e.g. capybara) that we don't want to require/include in the default config.
 
 ## v5.6.0 (2025-03-10)
 - Switch from `require` to `plugins` for `rubocop-rspec_rails` ruleset (`rulesets/rspec_rails.yml`).

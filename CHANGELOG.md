@@ -1,4 +1,4 @@
-## Unreleased
+## v5.6.0 (2025-03-10)
 - Switch from `require` to `plugins` for `rubocop-rspec_rails` ruleset (`rulesets/rspec_rails.yml`).
 - Switch from `require` to `plugins` for `rubocop-capybara` ruleset (`rulesets/capybara.yml`).
 

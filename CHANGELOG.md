@@ -1,5 +1,6 @@
 ## Unreleased
-[no unreleased changes yet]
+### Internal
+- Turn off warnings when running RSpec.
 
 ## v5.7.0 (2025-03-10)
 - Disable `Capybara/AmbiguousClick` and `Capybara/ClickLinkOrButtonStyle` and add `RungerStyle/ClickAmbiguously`, which does the opposite of `Capybara/AmbiguousClick`, i.e. it requires the use of `click_on` and forbids the use of `click_button` or `click_link`.

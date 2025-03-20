@@ -132,7 +132,7 @@ GEM
     runger_byebug (11.4.0)
       irb
       reline
-    runger_release_assistant (2.0.1)
+    runger_release_assistant (4.2.1)
       activesupport (>= 6)
       memo_wise (>= 1.7)
       rainbow (>= 3.0)
@@ -221,7 +221,7 @@ CHECKSUMS
   rubocop-rspec_rails (2.31.0) sha256=775375e18a26a1184a812ef3054b79d218e85601b9ae897f38f8be24dddf1f45
   ruby-progressbar (1.13.0) sha256=80fc9c47a9b640d6834e0dc7b3c94c9df37f08cb072b7761e4a71e22cff29b33
   runger_byebug (11.4.0) sha256=569e22ba2215f57e7f69e145fcb63be401e29fcd312f7936d813e12d0c7bbee6
-  runger_release_assistant (2.0.1) sha256=fd3d2599a42e6863b76d766aff03665842abe04e8f0e7fadba1b5c982b9c08e3
+  runger_release_assistant (4.2.1) sha256=beecd73684910327b7d7b01bf0b6ba6ce49a2cc743c641ca92d25ada8cd40e46
   runger_style (5.7.1.alpha)
   securerandom (0.4.1) sha256=cc5193d414a4341b6e225f0cb4446aceca8e50d5e1888743fac16987638ea0b1
   slop (4.10.1) sha256=844322b5ffcf17ed4815fdb173b04a20dd82b4fd93e3744c88c8fafea696d9c7

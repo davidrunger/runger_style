@@ -4,21 +4,22 @@ Shared rubocop rules for the preferred Ruby coding style of [@davidrunger][1].
 
 [1]: https://github.com/davidrunger/
 
-# Table of Contents
+## Table of Contents
 
 <!--ts-->
-   * [runger_style](#runger_style)
+* [runger_style](#runger_style)
    * [Table of Contents](#table-of-contents)
    * [Installation](#installation)
    * [Usage](#usage)
    * [Inspiration / Credits](#inspiration--credits)
    * [For maintainers](#for-maintainers)
 
-<!-- Added by: david, at: Tue Jan 26 02:54:38 PST 2021 -->
+<!-- Created by https://github.com/ekalinin/github-markdown-toc -->
+<!-- Added by: david, at: Sat Mar 22 04:48:36 AM CDT 2025 -->
 
 <!--te-->
 
-# Installation
+## Installation
 
 Add this to your application's Gemfile:
 
@@ -34,7 +35,7 @@ And then run:
 $ bundle install
 ```
 
-# Usage
+## Usage
 
 Create a `.rubocop.yml` file, including as many of the directives below as appropriate/desired.
 
@@ -84,13 +85,13 @@ Then, run:
 $ bundle exec rubocop
 ```
 
-# Inspiration / Credits
+## Inspiration / Credits
 
 This gem is inspired by (/ largely copied from) https://github.com/percy/percy-style , which was
 written about here: https://blog.percy.io/share-rubocop-rules-across-all-of-your-repos-f3281fbd71f8
 .
 
-# For maintainers
+## For maintainers
 
 To release a new version, run `bin/release` with an appropriate `--type` option, e.g.:
 

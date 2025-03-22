@@ -1,5 +1,6 @@
 ## Unreleased
-[no unreleased changes yet]
+### Internal
+- Remove check for alpha version from GitHub Action.
 
 ## v5.8.0 (2025-03-22)
 - Disable `Metrics/PerceivedComplexity` and `Metrics/MethodLength`.

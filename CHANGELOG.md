@@ -1,4 +1,7 @@
 ## Unreleased
+[no unreleased changes yet]
+
+## v5.8.0 (2025-03-22)
 - Disable `Metrics/PerceivedComplexity` and `Metrics/MethodLength`.
 - Allowlist `find_by_hashid` and `find_by_hashid!` for `Rails/DynamicFindBy`.
 - Add `Aws.config` to `AllowedReceivers` for `Rails/SaveBang`.

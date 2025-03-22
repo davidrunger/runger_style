@@ -1,4 +1,6 @@
 ## Unreleased
+- Disable `Metrics/PerceivedComplexity` and `Metrics/MethodLength`.
+
 ### Internal
 - Turn off warnings when running RSpec.
 

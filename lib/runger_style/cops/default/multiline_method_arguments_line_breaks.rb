@@ -7,7 +7,6 @@ module RungerStyle # rubocop:disable Style/ClassAndModuleChildren
 
     MSG = 'Each argument in a multi-line method call must start on a separate line.'
 
-    # rubocop:disable Metrics/PerceivedComplexity
     def on_send(node)
       if node.arguments? && multiline_method_call?(node)
         # When a method call uses keyword arguments without braces,
@@ -34,7 +33,6 @@ module RungerStyle # rubocop:disable Style/ClassAndModuleChildren
         end
       end
     end
-    # rubocop:enable Metrics/PerceivedComplexity
 
     private
 

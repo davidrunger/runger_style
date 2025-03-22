@@ -1,4 +1,7 @@
 ## Unreleased
+[no unreleased changes yet]
+
+## v5.8.1 (2025-03-22)
 ### Internal
 - Remove check for alpha version from GitHub Action.
 

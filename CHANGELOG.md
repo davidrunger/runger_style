@@ -1,5 +1,6 @@
 ## Unreleased
 - Disable `Metrics/PerceivedComplexity` and `Metrics/MethodLength`.
+- Allowlist `find_by_hashid` and `find_by_hashid!` for `Rails/DynamicFindBy`.
 
 ### Internal
 - Turn off warnings when running RSpec.

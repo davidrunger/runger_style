@@ -39,5 +39,8 @@ Rails/RakeEnvironment:
 Rails/ReversibleMigration:
   Exclude:
     - !ruby/regexp /db/migrate/201[1-9].*\.rb\z/
+Rails/SaveBang:
+  AllowedReceivers:
+    - Aws.config
 Rails/SchemaComment:
   Enabled: false

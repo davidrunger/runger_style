@@ -18,6 +18,12 @@ Rails/CreateTableWithTimestamps:
     - db/schema.rb
 Rails/Delegate:
   Enabled: false
+Rails/DynamicFindBy:
+  AllowedMethods:
+    - find_by_hashid
+    - find_by_hashid!
+    - find_by_sql
+    - find_by_token_for
 Rails/EnvironmentVariableAccess:
   AllowReads: true
 Rails/I18nLocaleTexts:

@@ -38,7 +38,7 @@ module RungerStyle::MultilineMethodCallIndentationPatches
     when :indented
       nil
     when :indented_relative_to_receiver
-      if ([node] + node.ancestors).any? { |node| !node.parenthesized_call? }
+      if ([node] + node.ancestors).any? { !it.parenthesized_call? }
         nil
       else
         receiver_alignment_base(node)

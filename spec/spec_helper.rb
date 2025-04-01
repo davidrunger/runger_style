@@ -20,8 +20,7 @@ RSpec.configure do |config|
 
   config.disable_monkey_patching!
 
-  # Reenable warnings after https://github.com/rubocop/rubocop-rails/issues/1465 is fixed.
-  # config.warnings = true
+  config.warnings = true
 
   config.order = :random
 

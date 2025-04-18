@@ -389,8 +389,8 @@ RSpec.describe RuboCop::Cop::Layout::MultilineMethodCallIndentation, :config do
   context 'when EnforcedStyle is indented_relative_to_receiver' do
     let(:cop_config) { { 'EnforcedStyle' => 'indented_relative_to_receiver' } }
 
-    include_examples 'common'
-    include_examples 'both indented* styles'
+    it_behaves_like 'common'
+    it_behaves_like 'both indented* styles'
 
     it 'requires indentation of a chained multiline method call used as a method argument' do
       expect_offense(<<~RUBY)

@@ -1,5 +1,5 @@
 ## Unreleased
-[no unreleased changes yet]
+- Update `Naming/PredicateName` cop name to `Naming/PredicatePrefix`.
 
 ## v5.8.1 (2025-03-22)
 ### Internal

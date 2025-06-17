@@ -1,5 +1,5 @@
 ## Unreleased
-[no unreleased changes yet]
+- Disable extension suggestions.
 
 ## v5.8.2 (2025-06-04)
 - Update `Naming/PredicateName` cop name to `Naming/PredicatePrefix`.

@@ -1,4 +1,7 @@
 ## Unreleased
+[no unreleased changes yet]
+
+## v5.9.0 (2025-06-17)
 - Disable extension suggestions.
 
 ## v5.8.2 (2025-06-04)

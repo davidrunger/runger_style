@@ -4,6 +4,7 @@ require:
 AllCops:
   EnabledByDefault: true
   ParserEngine: parser_prism
+  SuggestExtensions: false
   TargetRubyVersion: 3.4
   UseCache: true
 Bundler/GemComment:

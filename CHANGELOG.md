@@ -1,4 +1,7 @@
 ## Unreleased
+[no unreleased changes yet]
+
+## v5.10.0 (2025-06-20)
 - Disable `Naming/PredicateMethod` cop.
 
 ## v5.9.0 (2025-06-17)

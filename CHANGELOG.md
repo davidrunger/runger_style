@@ -1,5 +1,5 @@
 ## Unreleased
-[no unreleased changes yet]
+- Disable `Naming/PredicateMethod` cop.
 
 ## v5.9.0 (2025-06-17)
 - Disable extension suggestions.

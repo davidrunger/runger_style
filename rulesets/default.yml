@@ -97,6 +97,8 @@ Naming/BlockForwarding:
   Enabled: false
 Naming/InclusiveLanguage:
   Enabled: false
+Naming/PredicateMethod:
+  Enabled: false
 Naming/PredicatePrefix:
   ForbiddenPrefixes:
     - is_

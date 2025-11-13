@@ -11,11 +11,13 @@ RSpec.describe RungerStyle::FirstArgumentIndentation, :config do
 
   let(:other_cops) { { 'Layout/IndentationWidth' => { 'Width' => indentation_width } } }
 
+  # rubocop:disable RSpec/LeakyLocalVariable
   ruby_version =
     YAML.load_file(
       'rulesets/default.yml',
       permitted_classes: [Regexp],
     ).dig('AllCops', 'TargetRubyVersion')
+  # rubocop:enable RSpec/LeakyLocalVariable
 
   context "when the Ruby version is #{ruby_version}" do
     let(:ruby_version) { ruby_version }

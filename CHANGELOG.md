@@ -1,4 +1,7 @@
 ## Unreleased
+[no unreleased changes yet]
+
+## v5.11.0 (2025-11-24)
 - Disable `Rails/Env` cop.
 
 ## v5.10.0 (2025-06-20)

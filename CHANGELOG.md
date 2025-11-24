@@ -1,5 +1,5 @@
 ## Unreleased
-[no unreleased changes yet]
+- Disable `Rails/Env` cop.
 
 ## v5.10.0 (2025-06-20)
 - Disable `Naming/PredicateMethod` cop.

@@ -1,4 +1,7 @@
 ## Unreleased
+[no unreleased changes yet]
+
+## v5.12.0 (2026-01-28)
 - [default] Disable `Style/HashLookupMethod` cop.
 
 ## v5.11.0 (2025-11-24)

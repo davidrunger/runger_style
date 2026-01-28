@@ -1,5 +1,5 @@
 ## Unreleased
-[no unreleased changes yet]
+- [default] Disable `Style/HashLookupMethod` cop.
 
 ## v5.11.0 (2025-11-24)
 - Disable `Rails/Env` cop.

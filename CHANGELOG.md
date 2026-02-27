@@ -1,4 +1,7 @@
 ## Unreleased
+[no unreleased changes yet]
+
+## v5.13.0 (2026-02-26)
 - [default] Disable `Style/OneClassPerFile` cop.
 
 ## v5.12.0 (2026-01-28)

@@ -1,5 +1,5 @@
 ## Unreleased
-[no unreleased changes yet]
+- [default] Disable `Style/OneClassPerFile` cop.
 
 ## v5.12.0 (2026-01-28)
 - [default] Disable `Style/HashLookupMethod` cop.

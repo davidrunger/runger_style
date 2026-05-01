@@ -8,9 +8,9 @@ Capybara/AmbiguousClick:
   Enabled: false
 Capybara/ClickLinkOrButtonStyle:
   Enabled: false
-Capybara/NegationMatcher:
+Capybara/RSpec/NegationMatcher:
   EnforcedStyle: not_to
-Capybara/SpecificMatcher:
+Capybara/RSpec/SpecificMatcher:
   Enabled: false
 RungerStyle/ClickAmbiguously:
   Enabled: true

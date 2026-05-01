@@ -1,4 +1,7 @@
 ## Unreleased
+[no unreleased changes yet]
+
+## v5.13.1 (2026-05-01)
 - [capybara] Update `Capybara/NegationMatcher` to `Capybara/RSpec/NegationMatcher` and `Capybara/SpecificMatcher` to `Capybara/RSpec/SpecificMatcher`.
 
 ## v5.13.0 (2026-02-26)

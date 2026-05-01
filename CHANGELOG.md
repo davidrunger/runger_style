@@ -1,5 +1,5 @@
 ## Unreleased
-[no unreleased changes yet]
+- [capybara] Update `Capybara/NegationMatcher` to `Capybara/RSpec/NegationMatcher` and `Capybara/SpecificMatcher` to `Capybara/RSpec/SpecificMatcher`.
 
 ## v5.13.0 (2026-02-26)
 - [default] Disable `Style/OneClassPerFile` cop.

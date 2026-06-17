@@ -183,21 +183,21 @@ RSpec.describe RuboCop::Cop::Layout::MultilineMethodCallIndentation, :config do
 
     it 'registers an offense and corrects the emacs ruby-mode 1.1 ' \
        'indentation of an expression in an array' do
-         expect_offense(<<~RUBY)
-           [
-            a.
-            b
-            ^ Use 2 (not 0) spaces for indenting an expression spanning multiple lines.
-           ]
-         RUBY
+      expect_offense(<<~RUBY)
+        [
+         a.
+         b
+         ^ Use 2 (not 0) spaces for indenting an expression spanning multiple lines.
+        ]
+      RUBY
 
-         expect_correction(<<~RUBY)
-           [
-            a.
-              b
-           ]
-         RUBY
-       end
+      expect_correction(<<~RUBY)
+        [
+         a.
+           b
+        ]
+      RUBY
+    end
 
     it 'registers an offense and corrects extra indentation of 3rd line in typical RSpec code' do
       expect_offense(<<~RUBY)
@@ -289,21 +289,21 @@ RSpec.describe RuboCop::Cop::Layout::MultilineMethodCallIndentation, :config do
 
       it 'registers an offense and corrects the emacs ruby-mode 1.1 ' \
          'indentation of an expression in an array' do
-           expect_offense(<<~RUBY)
-             [
-              a&.
-              b
-              ^ Use 2 (not 0) spaces for indenting an expression spanning multiple lines.
-             ]
-           RUBY
+        expect_offense(<<~RUBY)
+          [
+           a&.
+           b
+           ^ Use 2 (not 0) spaces for indenting an expression spanning multiple lines.
+          ]
+        RUBY
 
-           expect_correction(<<~RUBY)
-             [
-              a&.
-                b
-             ]
-           RUBY
-         end
+        expect_correction(<<~RUBY)
+          [
+           a&.
+             b
+          ]
+        RUBY
+      end
 
       it 'registers an offense and corrects extra indentation of 3rd line in typical RSpec code' do
         expect_offense(<<~RUBY)
@@ -534,25 +534,25 @@ RSpec.describe RuboCop::Cop::Layout::MultilineMethodCallIndentation, :config do
 
     it 'does not register an offense when multiline method chain has expected indent width and ' \
        'the method is preceded by splat' do
-         expect_no_offenses(<<~RUBY)
-           [
-             *foo
-               .bar(
-                 arg)
-           ]
-         RUBY
-       end
+      expect_no_offenses(<<~RUBY)
+        [
+          *foo
+            .bar(
+              arg)
+        ]
+      RUBY
+    end
 
     it 'does not register an offense when multiline method chain has expected indent width and ' \
        'the method is preceded by double splat' do
-         expect_no_offenses(<<~RUBY)
-           [
-             **foo
-               .bar(
-                 arg)
-           ]
-         RUBY
-       end
+      expect_no_offenses(<<~RUBY)
+        [
+          **foo
+            .bar(
+              arg)
+        ]
+      RUBY
+    end
 
     it 'registers an offense and corrects one space indentation of 2nd line' do
       expect_offense(<<~RUBY)
@@ -602,20 +602,20 @@ RSpec.describe RuboCop::Cop::Layout::MultilineMethodCallIndentation, :config do
 
     it 'registers an offense and corrects the emacs ruby-mode 1.1 ' \
        'indentation of an expression in an array' do
-         expect_offense(<<~RUBY)
-           [
-            a.
-            b
-            ^ Use 2 (not 0) spaces for indenting an expression spanning multiple lines.
-           ]
-         RUBY
+      expect_offense(<<~RUBY)
+        [
+         a.
+         b
+         ^ Use 2 (not 0) spaces for indenting an expression spanning multiple lines.
+        ]
+      RUBY
 
-         expect_correction(<<~RUBY)
-           [
-            a.
-              b
-           ]
-         RUBY
-       end
+      expect_correction(<<~RUBY)
+        [
+         a.
+           b
+        ]
+      RUBY
+    end
   end
 end

@@ -1,4 +1,7 @@
 ## Unreleased
+[no unreleased changes yet]
+
+## v5.13.2 (2026-06-23)
 - [capybara] Delete disablement of removed `Capybara/ClickLinkOrButtonStyle` rule.
 
 ## v5.13.1 (2026-05-01)

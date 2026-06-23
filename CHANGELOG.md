@@ -1,5 +1,5 @@
 ## Unreleased
-[no unreleased changes yet]
+- [capybara] Delete disablement of removed `Capybara/ClickLinkOrButtonStyle` rule.
 
 ## v5.13.1 (2026-05-01)
 - [capybara] Update `Capybara/NegationMatcher` to `Capybara/RSpec/NegationMatcher` and `Capybara/SpecificMatcher` to `Capybara/RSpec/SpecificMatcher`.

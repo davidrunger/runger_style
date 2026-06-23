@@ -6,8 +6,6 @@ plugins:
 
 Capybara/AmbiguousClick:
   Enabled: false
-Capybara/ClickLinkOrButtonStyle:
-  Enabled: false
 Capybara/RSpec/NegationMatcher:
   EnforcedStyle: not_to
 Capybara/RSpec/SpecificMatcher:

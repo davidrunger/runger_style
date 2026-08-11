@@ -1,4 +1,7 @@
 ## Unreleased
+[no unreleased changes yet]
+
+## v5.14.0 (2026-08-11)
 - [default] Allow long AnnotateRb index comments for custom and regular index names.
 
 ## v5.13.2 (2026-06-23)

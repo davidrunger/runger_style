@@ -1,5 +1,5 @@
 ## Unreleased
-[no unreleased changes yet]
+- [default] Allow long AnnotateRb index comments for custom and regular index names.
 
 ## v5.13.2 (2026-06-23)
 - [capybara] Delete disablement of removed `Capybara/ClickLinkOrButtonStyle` rule.

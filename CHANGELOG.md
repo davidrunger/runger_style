@@ -1,4 +1,7 @@
 ## Unreleased
+[no unreleased changes yet]
+
+## v5.14.1 (2026-08-13)
 - [default] Enforce fixed continuation indentation for parenthesis-free macro calls.
 
 ## v5.14.0 (2026-08-11)

@@ -1,5 +1,5 @@
 ## Unreleased
-[no unreleased changes yet]
+- [default] Enforce fixed continuation indentation for parenthesis-free macro calls.
 
 ## v5.14.0 (2026-08-11)
 - [default] Allow long AnnotateRb index comments for custom and regular index names.

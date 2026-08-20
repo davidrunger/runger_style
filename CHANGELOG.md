@@ -1,4 +1,7 @@
 ## Unreleased
+[no unreleased changes yet]
+
+## v5.15.0 (2026-08-20)
 - [default] Add `RungerStyle/IfUnlessModifier` to prohibit trailing `if` and `unless` conditions.
 
 ## v5.14.1 (2026-08-13)

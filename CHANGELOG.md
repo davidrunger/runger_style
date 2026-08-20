@@ -1,5 +1,5 @@
 ## Unreleased
-[no unreleased changes yet]
+- [default] Add `RungerStyle/IfUnlessModifier` to prohibit trailing `if` and `unless` conditions.
 
 ## v5.14.1 (2026-08-13)
 - [default] Enforce fixed continuation indentation for parenthesis-free macro calls.

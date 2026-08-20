@@ -3,9 +3,9 @@
 module RungerStyle # rubocop:disable Style/ClassAndModuleChildren
   class FirstArgumentIndentation < ::RuboCop::Cop::Layout::FirstArgumentIndentation
     def on_send(node)
-      return if memoizing?(node)
-
-      super
+      unless memoizing?(node)
+        super
+      end
     end
 
     private

@@ -1,5 +1,5 @@
 ## Unreleased
-[no unreleased changes yet]
+- [default] Add `RungerStyle/EmptyLineAfterMacro` to require an empty line after a group of macro calls.
 
 ## v5.15.0 (2026-08-20)
 - [default] Add `RungerStyle/IfUnlessModifier` to prohibit trailing `if` and `unless` conditions.

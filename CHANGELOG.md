@@ -1,4 +1,7 @@
 ## Unreleased
+[no unreleased changes yet]
+
+## v5.16.1 (2026-08-21)
 - [default] Fix false positives from `RungerStyle/EmptyLineAfterMacro` inside method bodies.
 
 ## v5.16.0 (2026-08-21)

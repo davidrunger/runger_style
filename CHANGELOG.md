@@ -1,4 +1,7 @@
 ## Unreleased
+[no unreleased changes yet]
+
+## v5.16.0 (2026-08-21)
 - [default] Add `RungerStyle/EmptyLineAfterMacro` to require an empty line after a group of macro calls.
 
 ## v5.15.0 (2026-08-20)

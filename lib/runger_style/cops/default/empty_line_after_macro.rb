@@ -44,9 +44,7 @@ module RungerStyle # rubocop:disable Style/ClassAndModuleChildren
     end
 
     def class_or_module_scope?(node)
-      node.each_ancestor.any? do |ancestor|
-        ancestor.class_type? || ancestor.module_type? || ancestor.sclass_type?
-      end
+      node.parent&.class_type? || node.parent&.module_type? || node.parent&.sclass_type?
     end
 
     def empty_line_between?(previous_node, next_node)

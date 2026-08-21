@@ -1,5 +1,5 @@
 ## Unreleased
-[no unreleased changes yet]
+- [default] Fix false positives from `RungerStyle/EmptyLineAfterMacro` inside method bodies.
 
 ## v5.16.0 (2026-08-21)
 - [default] Add `RungerStyle/EmptyLineAfterMacro` to require an empty line after a group of macro calls.

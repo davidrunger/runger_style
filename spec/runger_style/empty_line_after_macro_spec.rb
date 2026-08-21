@@ -150,4 +150,39 @@ RSpec.describe RungerStyle::EmptyLineAfterMacro, :config do
       end
     RUBY
   end
+
+  it 'does not treat setter calls inside instance methods as macros' do
+    expect_no_offenses(<<~RUBY)
+      class ApplicationCable::Connection < ActionCable::Connection::Base
+        def connect
+          self.current_user = find_verified_user
+          AuthenticatedSessions::Registry.current(request.session, :user)
+        end
+      end
+    RUBY
+  end
+
+  it 'does not treat setter calls inside singleton methods as macros' do
+    expect_no_offenses(<<~RUBY)
+      class ApplicationCable::Connection < ActionCable::Connection::Base
+        def self.connect
+          self.current_user = find_verified_user
+          AuthenticatedSessions::Registry.current(request.session, :user)
+        end
+      end
+    RUBY
+  end
+
+  it 'does not treat setter calls inside methods in a singleton class as macros' do
+    expect_no_offenses(<<~RUBY)
+      class ApplicationCable::Connection < ActionCable::Connection::Base
+        class << self
+          def connect
+            self.current_user = find_verified_user
+            AuthenticatedSessions::Registry.current(request.session, :user)
+          end
+        end
+      end
+    RUBY
+  end
 end

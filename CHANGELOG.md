@@ -1,5 +1,5 @@
 ## Unreleased
-[no unreleased changes yet]
+- [default] Add report-only `RungerStyle/NoReturn` to forbid explicit `return` statements.
 
 ## v5.16.1 (2026-08-21)
 - [default] Fix false positives from `RungerStyle/EmptyLineAfterMacro` inside method bodies.

@@ -8,17 +8,15 @@ module RungerStyle # rubocop:disable Style/ClassAndModuleChildren
     MSG = 'Add an empty line after a macro call.'
 
     def on_begin(node)
-      unless class_or_module_scope?(node)
-        return
-      end
+      if class_or_module_scope?(node)
+        node.children.each_cons(2) do |previous_node, next_node|
+          macro_call = macro_call_node(previous_node)
+          next_macro_call = macro_call_node(next_node)
 
-      node.children.each_cons(2) do |previous_node, next_node|
-        macro_call = macro_call_node(previous_node)
-        next_macro_call = macro_call_node(next_node)
-
-        if macro_call && !next_macro_call && !empty_line_between?(previous_node, next_node)
-          add_offense(macro_call.loc.selector, message: MSG) do |corrector|
-            autocorrect(corrector, previous_node, next_node)
+          if macro_call && !next_macro_call && !empty_line_between?(previous_node, next_node)
+            add_offense(macro_call.loc.selector, message: MSG) do |corrector|
+              autocorrect(corrector, previous_node, next_node)
+            end
           end
         end
       end
@@ -33,10 +31,8 @@ module RungerStyle # rubocop:disable Style/ClassAndModuleChildren
       end
 
       if method_call.send_type? && macro_call?(method_call)
-        return method_call
+        method_call
       end
-
-      nil
     end
 
     def macro_call?(node)

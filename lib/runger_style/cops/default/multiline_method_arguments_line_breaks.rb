@@ -12,9 +12,11 @@ module RungerStyle # rubocop:disable Style/ClassAndModuleChildren
         # When a method call uses keyword arguments without braces,
         # the parser produces a single hash node. In that case, inspect its pairs.
         arguments =
-          if node.arguments.one? &&
+          if (
+            node.arguments.one? &&
               node.arguments.first.hash_type? &&
               !node.arguments.first.braces?
+          )
             node.arguments.first.pairs
           else
             node.arguments

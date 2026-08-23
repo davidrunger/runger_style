@@ -199,8 +199,6 @@ Style/MethodCallWithArgsParentheses:
     - desc
     - describe
     - drop_table
-    - fail
-    - file
     - float
     - foreign_key
     - gem
@@ -213,9 +211,6 @@ Style/MethodCallWithArgsParentheses:
     - jsonb
     - load
     - not_to
-    - p
-    - print
-    - puts
     - references
     - remove_column
     - remove_index
@@ -223,14 +218,11 @@ Style/MethodCallWithArgsParentheses:
     - require
     - require_relative
     - ruby
-    - run
-    - source
     - string
     - text
     - timestamp
     - timestamps
     - to
-    - visit
 Style/MethodCalledOnDoEndBlock:
   Enabled: false
 Style/MissingElse:

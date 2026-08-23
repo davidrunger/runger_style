@@ -1,4 +1,7 @@
 ## Unreleased
+[no unreleased changes yet]
+
+## v5.19.0 (2026-08-23)
 - Remove eight methods from `Style/MethodCallWithArgsParentheses` allowlist.
 - Remove five methods from `Style/MethodCallWithArgsParentheses` allowlist.
 

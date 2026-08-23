@@ -1,5 +1,6 @@
 ## Unreleased
 - Remove eight methods from `Style/MethodCallWithArgsParentheses` allowlist.
+- Remove five methods from `Style/MethodCallWithArgsParentheses` allowlist.
 
 ## v5.18.0 (2026-08-22)
 - [default] Add `RungerStyle/ParenthesesAroundMultilineCondition` to require parentheses around multiline `if`, `unless`, and `elsif` conditions, except for multiline block conditions and parenthesized receivers.

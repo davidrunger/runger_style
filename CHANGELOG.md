@@ -1,4 +1,7 @@
 ## Unreleased
+[no unreleased changes yet]
+
+## v5.19.1 (2026-08-24)
 - [default] Fix false positives from `RungerStyle/EmptyLineAfterMacro` for `||=` setter calls.
 
 ## v5.19.0 (2026-08-23)

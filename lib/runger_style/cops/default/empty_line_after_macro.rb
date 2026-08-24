@@ -28,6 +28,8 @@ module RungerStyle # rubocop:disable Style/ClassAndModuleChildren
       method_call = node
       if node.any_block_type?
         method_call = node.send_node
+      elsif node.or_asgn_type?
+        method_call = node.assignment_node
       end
 
       if method_call.send_type? && macro_call?(method_call)

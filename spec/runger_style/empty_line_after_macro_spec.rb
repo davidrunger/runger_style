@@ -39,6 +39,7 @@ RSpec.describe RungerStyle::EmptyLineAfterMacro, :config do
       class EmojiPickerController < ApplicationController
         skip_before_action :authenticate_user!
         self.container_classes = %w[p-8]
+        self.use_local_files ||= ::Rails.env.development?
 
         def index
           render :index

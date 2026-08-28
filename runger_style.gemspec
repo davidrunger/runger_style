@@ -26,11 +26,10 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   # HACK: Using public_send rather than read works around a Dependabot bug.
-  # rubocop:disable Style/SendWithLiteralMethodName
+  # rubocop:disable-next Style/SendWithLiteralMethodName
   required_ruby_version =
     File.public_send(:read, '.ruby-version').
       rstrip.sub(/\A(\d+\.\d+)\.\d+\z/, '\1.0')
-  # rubocop:enable Style/SendWithLiteralMethodName
   spec.required_ruby_version = ">= #{required_ruby_version}"
 
   spec.add_dependency('prism', '>= 0.24.0')

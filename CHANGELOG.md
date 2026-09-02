@@ -1,5 +1,5 @@
 ## Unreleased
-[no unreleased changes yet]
+- [rspec] Re-enable `RSpec/MessageSpies`.
 
 ## v5.19.1 (2026-08-24)
 - [default] Fix false positives from `RungerStyle/EmptyLineAfterMacro` for `||=` setter calls.

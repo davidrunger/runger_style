@@ -1,4 +1,7 @@
 ## Unreleased
+[no unreleased changes yet]
+
+## v5.20.0 (2026-09-02)
 - [rspec] Re-enable `RSpec/MessageSpies`.
 
 ## v5.19.1 (2026-08-24)

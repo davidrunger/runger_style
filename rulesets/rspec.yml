@@ -31,7 +31,5 @@ RSpec/ExpectInHook:
   Enabled: false
 RSpec/MessageExpectation:
   Enabled: false
-RSpec/MessageSpies:
-  Enabled: false
 RSpec/NestedGroups:
   Enabled: false

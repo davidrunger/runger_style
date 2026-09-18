@@ -1,4 +1,7 @@
 ## Unreleased
+[no unreleased changes yet]
+
+## v5.21.0 (2026-09-18)
 - [default] Change `Style/EmptyMethod` enforced style to `expanded`.
 
 ## v5.20.0 (2026-09-02)

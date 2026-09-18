@@ -1,5 +1,5 @@
 ## Unreleased
-[no unreleased changes yet]
+- [default] Change `Style/EmptyMethod` enforced style to `expanded`.
 
 ## v5.20.0 (2026-09-02)
 - [rspec] Re-enable `RSpec/MessageSpies`.

@@ -1,4 +1,7 @@
 ## Unreleased
+[no unreleased changes yet]
+
+## v5.21.1 (2026-09-20)
 - [default] Fix invalid `RungerStyle/MultilineMethodArgumentsLineBreaks` autocorrection for indexed assignments.
 
 ## v5.21.0 (2026-09-18)

@@ -27,9 +27,11 @@ module RungerStyle # rubocop:disable Style/ClassAndModuleChildren
             separator = separator_range(arg1, arg2)
 
             add_offense(separator, message: MSG) do |corrector|
-              base_indent = base_indentation(arg1)
-              replacement = ",\n#{base_indent}"
-              corrector.replace(separator, replacement)
+              corrector.replace(separator, correction_replacement(node, arg1, arg2))
+
+              if indexed_assignment_rhs?(node, arg2)
+                indent_continuation_lines(corrector, arg2)
+              end
             end
           end
         end
@@ -49,6 +51,42 @@ module RungerStyle # rubocop:disable Style/ClassAndModuleChildren
 
     def base_indentation(arg)
       arg.source_range.source_line[/^\s*/]
+    end
+
+    def correction_replacement(node, arg1, arg2)
+      if indexed_assignment_rhs?(node, arg2)
+        indexed_assignment_replacement(node, arg1)
+      else
+        base_indent = base_indentation(arg1)
+        ",\n#{base_indent}"
+      end
+    end
+
+    def indexed_assignment_rhs?(node, arg2)
+      node.method_name == :[]= && node.arguments.last.equal?(arg2)
+    end
+
+    def indexed_assignment_replacement(node, arg1)
+      assignment =
+        range_between(arg1.source_range.end_pos, node.loc.operator.end_pos).source.rstrip
+      indentation = ' ' * indentation_width
+
+      "#{assignment}\n#{base_indentation(arg1)}#{indentation}"
+    end
+
+    def indent_continuation_lines(corrector, arg)
+      buffer = arg.source_range.source_buffer
+      indentation = ' ' * indentation_width
+
+      (arg.source_range.line + 1).upto(arg.source_range.last_line) do |line|
+        line_start = buffer.line_range(line).begin_pos
+        line_start_range = Parser::Source::Range.new(buffer, line_start, line_start)
+        corrector.insert_before(line_start_range, indentation)
+      end
+    end
+
+    def indentation_width
+      config.for_cop('Layout/IndentationWidth')['Width'] || 2
     end
 
     def separator_range(arg1, arg2)

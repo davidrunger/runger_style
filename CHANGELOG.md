@@ -1,5 +1,5 @@
 ## Unreleased
-[no unreleased changes yet]
+- [default] Fix invalid `RungerStyle/MultilineMethodArgumentsLineBreaks` autocorrection for indexed assignments.
 
 ## v5.21.0 (2026-09-18)
 - [default] Change `Style/EmptyMethod` enforced style to `expanded`.

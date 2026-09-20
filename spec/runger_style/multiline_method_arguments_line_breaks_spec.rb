@@ -65,6 +65,26 @@ RSpec.describe RungerStyle::MultilineMethodArgumentsLineBreaks, :config do
       end
     end
 
+    context 'when the method call is an indexed assignment with a multiline value' do
+      it 'registers an offense and autocorrects it' do
+        expect_offense(<<~RUBY)
+          a_hash[a_key] = [
+                      ^^^^ Each argument in a multi-line method call must start on a separate line.
+            item_one,
+            item_two,
+          ]
+        RUBY
+
+        expect_correction(<<~RUBY)
+          a_hash[a_key] =
+            [
+              item_one,
+              item_two,
+            ]
+        RUBY
+      end
+    end
+
     context 'when the method call is multi-line with three arguments on the same line' do
       it 'registers an offense and autocorrects it' do
         expect_offense(<<~RUBY)
